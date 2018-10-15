@@ -1,0 +1,107 @@
+{
+  "name": "StuTech Grants",
+  "title": "StuTech Grants – grants for high school STEM projects",
+  "description": "StuTech gives high schoolers grant money to create high-impact STEM projects that move the world forward.",
+  "url": "https://grants.stutech.org",
+  "twitter": "@stutechgrants",
+  "img": "https://grants.stutech.org/card.png",
+  "urls": {
+    "twitter": "https://twitter.com/stutechgrants",
+    "email": "mailto:theo@stutech.org"
+  },
+  "org": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "StuTech",
+    "url": "https://grants.stutech.org",
+    "logo": "https://grants.stutech.org/flag.png",
+    "sameAs": [
+      "https://twitter.com/stutech",
+      "https://www.instagram.com/stutech",
+      "https://www.facebook.com/stutech"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": "theo@stutech.org",
+        "contactType": "customer support",
+        "url": "https://grants.stutech.org"
+      }
+    ]
+  },
+  "apply": {
+    "currentApplications": 32,
+    "applicationSlots": 50,
+    "nextRound": "2018-10-15",
+    "nextRoundCloses": "2018-11-19"
+  },
+  "judges": [
+    {
+      "name": "Roy Bahat",
+      "twitter": "roybahat",
+      "bio": "Head @ Bloomberg Beta",
+      "current": true
+    },
+    {
+      "name": "Brandon Kessler",
+      "twitter": "bkessler",
+      "bio": "Founder of Devpost",
+      "current": true
+    },
+    {
+      "name": "Geoff Ralston",
+      "twitter": "gralston",
+      "bio": "Education @ YC (Imagine K12)",
+      "current": true
+    },
+    {
+      "name": "Nate Kontny",
+      "twitter": "natekontny",
+      "bio": "Founder of Draft, former Highrise CEO",
+      "current": true
+    },
+    {
+      "name": "Ryan Hoover",
+      "twitter": "rrhoover",
+      "bio": "Founder of Product Hunt",
+      "current": true
+    },
+    {
+      "name": "Brad Feld",
+      "twitter": "bfeld",
+      "bio": "VC @ Foundry Group",
+      "current": true
+    },
+    {
+      "name": "Paul Berberian",
+      "twitter": "pberberian",
+      "bio": "Founder of Sphero",
+      "current": true
+    },
+    {
+      "name": "Dale Stephens",
+      "twitter": "DaleJStephens",
+      "bio": "Director @ Test Kitchen Capital, Founder of Uncollege",
+      "current": true
+    },
+    {
+      "name": "Quinn Slack",
+      "twitter": "sqs",
+      "bio": "Founder of Sourcegraph",
+      "current": true
+    },
+    {
+      "name": "Rahul Vohra",
+      "twitter": "rahulvohra",
+      "bio": "Founder/CEO of Superhuman",
+      "current": true
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "repl.it",
+      "image": "replit.svg",
+      "link":"https://repl.it"
+    }
+  ]
+}
