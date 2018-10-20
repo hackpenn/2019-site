@@ -35,13 +35,15 @@ export const Item = styled(A.withComponent(Link)).attrs({
   cursor: pointer;
   transition: ${theme.transition} all;
 
-  &:hover {
-    opacity: 1;
+  ${theme.mediaQueries.md} {
+    &:hover {
+      opacity: 1;
 
-    &:after,
-    &:before {
-      width: 100%;
-      left: 0;
+      &:after,
+      &:before {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 
