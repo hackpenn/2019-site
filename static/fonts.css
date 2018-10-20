@@ -1,89 +1,28 @@
-/* @font-face {
-  font-family: 'Graph Black Web';
-  src: url('/fonts/graph-black/graph-black-web.eot');
-  src: url('/fonts/graph-black/graph-black-web.eot?#iefix')
+@font-face {
+  font-family: 'Katwijk Mono Web';
+  src: url('/katwijk-mono/katwijk-mono-regular-web.eot');
+  src: url('/katwijk-mono/katwijk-mono-regular-web.eot?#iefix')
       format('embedded-opentype'),
-    url('/fonts/graph-black/graph-black-web.woff2') format('woff2'),
-    url('/fonts/graph-black/graph-black-web.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-} */
-
-/*
-@font-face {
-  font-family: 'Eesti';
-  src: url('/fonts/GT-Eesti-Text-Book.eot'),
-    url('/fonts/GT-Eesti-Text-Book.otf'), url('/fonts/GT-Eesti-Text-Book.ttf');
-  font-weight: normal;
+    url('/katwijk-mono/katwijk-mono-regular-web.svg#katwijkmonoregular')
+      format('svg'),
+    url('/katwijk-mono/katwijk-mono-regular-web.woff2') format('woff2'),
+    url('/katwijk-mono/katwijk-mono-regular-web.ttf') format('truetype');
+  font-weight: regular;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Super';
-  src: url('/fonts/GT-Super-Display-Bold.eot'),
-    url('/fonts/GT-Super-Display-Bold.otf'),
-    url('/fonts/GT-Super-Display-Bold.ttf');
-  font-weight: normal;
+  font-family: 'Inter UI';
   font-style: normal;
-}
-*/
-
-@font-face {
-  font-family: 'Glosa Display';
-  src: url('/fonts/glosa/glosa_display_black.woff2') format('woff2'),
-    url('/fonts/glosa/glosa_display_black.woff') format('woff'),
-    url('/fonts/glosa/glosa_display_black.eot') format('eot');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('/fonts/calibre/calibre_regular.woff2') format('woff2'),
-    url('/fonts/calibre/calibre_regular.woff') format('woff'),
-    url('/fonts/calibre/calibre_regular.eot') format('eot');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('/fonts/calibre/calibre_medium.woff2') format('woff2'),
-    url('/fonts/calibre/calibre_medium.woff') format('woff'),
-    url('/fonts/calibre/calibre_medium.eot') format('eot');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('/fonts/calibre/calibre_regular.woff2') format('woff2'),
-    url('/fonts/calibre/calibre_regular.woff') format('woff'),
-    url('/fonts/calibre/calibre_regular.eot') format('eot');
   font-weight: bold;
-  font-style: normal;
+  src: url('/inter-ui/Inter-UI-Regular.woff2?v=3.0') format('woff2'),
+    url('/inter-ui/Inter-UI-Regular.woff?v=3.0') format('woff');
 }
 
 @font-face {
-  font-family: 'Klima Web';
-  src: url('/fonts/klima/klima-regular-web.woff2') format('woff2'),
-    url('/fonts/klima/klima-regular-web.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Klima Web';
-  src: url('/fonts/klima/klima-medium-web.woff2') format('woff2'),
-    url('/fonts/klima/klima-medium-web.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Klima Web';
-  src: url('/fonts/klima/klima-bold-web.woff2') format('woff2'),
-    url('/fonts/klima/klima-bold-web.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'Inter UI';
+  font-style: regular;
+  font-weight: normal;
+  src: url('/inter-ui/Inter-UI-SemiBold.woff2?v=3.0') format('woff2'),
+    url('/inter-ui/Inter-UI-SemiBold.woff?v=3.0') format('woff');
 }

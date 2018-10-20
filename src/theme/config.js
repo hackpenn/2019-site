@@ -40,11 +40,10 @@ theme.colors = colors
 const baseFamily =
   '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
 
-const mono = '"Katwijk Mono"'
+const mono = '"Katwijk Mono Web"'
 const sans = '"Inter UI"'
 
 theme.font = `${mono},${baseFamily}`
 theme.fontSans = `${sans},${baseFamily}`
-theme.bold = '700'
 
 export default theme

@@ -65,7 +65,7 @@ export default () => (
           never have direct access to the money, having to fill out bureaucratic
           expense forms.
         </Text>
-        <Text fontSize={[3, 4]} style={{ fontWeight: '600' }} my={[3, 4]}>
+        <Text fontSize={[3, 4]} bold my={[3, 4]}>
           <Highlight>
             These kinds of barriers are squandering talent everywhere
           </Highlight>

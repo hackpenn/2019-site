@@ -15,8 +15,6 @@ import Layout from 'components/Layout'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
-import Slider from 'components/Slider'
-import Bio from 'components/Bio'
 import Sponsors from 'components/Sponsors'
 import Apply from 'components/Apply'
 import Footer from 'components/Footer'
@@ -87,14 +85,7 @@ export default () => (
     >
       <Container width={1} px={3}>
         <Image alt="Hack Pennsylvania logo" src="/hero.svg" />
-        <Heading.h1
-          fontSize={[4, 5, 6]}
-          mt={3}
-          style={{
-            fontWeight: '300',
-            fontFamily: theme.font
-          }}
-        >
+        <Heading.h1 fontSize={[4, 5, 6]} mt={3}>
           Pennsylvania’s premiere high&nbsp;school hackathon is back.
         </Heading.h1>
         <Flex align="center" wrap mt={4}>

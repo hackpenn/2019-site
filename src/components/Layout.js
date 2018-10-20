@@ -2,7 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import data from 'data'
 import ThemeProvider from 'theme'
-import theme from 'theme/config'
+import { theme } from 'theme'
+import fonts from '../../static/fonts.css'
 
 const { name, title, description, img, url, org } = data
 
@@ -35,7 +36,6 @@ export default ({ children }) => (
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: url }
       ])}
-      <link rel="stylesheet" href="https://rsms.me/inter/inter-ui.css" />
       <script type="application/ld+json" children={JSON.stringify(org)} />
     </Helmet>
     {children}

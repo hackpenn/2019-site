@@ -29,7 +29,6 @@ export const Item = styled(A.withComponent(Link)).attrs({
 })`
   color: inherit;
   opacity: 0.875;
-  font-weight: 600;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
