@@ -29,14 +29,14 @@ const Banner = styled(Container).attrs({
 })``
 
 const Headline = styled(Heading.h2).attrs({
-  fontSize: [5, 6],
+  fontSize: [6, 7],
   mb: 2
 })`
   line-height: 1.25;
 `
 
 const Lead = styled(Container.withComponent(Text)).attrs({
-  fontSize: 3,
+  fontSize: 4,
   mx: 'auto'
 })``
 
@@ -109,25 +109,28 @@ export default () => (
         pb={[4, 5, 6]}
         color={theme.colors.black}
       >
-        <Banner>
-          <Bannerline />
-          <Headline>Grants, done right.</Headline>
-          <Lead maxWidth={32}>
-            No bureaucracy, no BS: Hack Pennsylvania are the end of 18+
-            requirements, weeks of waiting, expense forms, and the rest of the
-            mess of traditional grants. Game on.
+        <Banner pt={[0, 4]} pb={3}>
+          <Bannerline color={theme.colors.orange[3]} />
+          <Headline>24 hours of coding, fun, free food, & prizes.</Headline>
+          <Lead maxWidth={48}>
+            Hack Pennsylvania is a hackathon, a 24-hour coding competition. 200
+            students from across Central PA will come for the day. You’ll work
+            with a team (or by yourself) to build an app, game, or website.
+            We’ll have free food & drinks, and you can sleep in the middle, or
+            not. In the morning, a group of judges will pick the best projects
+            to demo for everyone and win prizes.
           </Lead>
         </Banner>
         <Modules>
           <Module
-            icon="clock"
-            name="Superfast turnaround"
-            body="We’re not about waiting. Applications are all reviewed by our judges within the week."
+            icon="member-add"
+            name="Beginner-oriented"
+            body="Most attendees will be new to coding, so we’ll have workshops and mentors to get you going."
           />
           <Module
-            icon="payment"
-            name="Funding, no strings attached"
-            body="No expense forms to fill out here: the money comes on a card & is yours to spend freely."
+            icon="like"
+            name="A safe space for all"
+            body="You’ll be in a friendly, safe environment, with diverse attendees, free of harassment."
           />
         </Modules>
       </Container>
