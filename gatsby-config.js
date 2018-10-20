@@ -46,13 +46,13 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-127205588-1',
-        head: true
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId: 'UA-127205588-1',
+    //     head: true
+    //   }
+    // },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
