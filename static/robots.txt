@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://grants.stutech.org/sitemap.xml
+Sitemap: https://hackpenn.com/sitemap.xml

@@ -1,107 +1,35 @@
 {
-  "name": "StuTech Grants",
-  "title": "StuTech Grants – grants for high school STEM projects",
-  "description": "StuTech gives high schoolers grant money to create high-impact STEM projects that move the world forward.",
-  "url": "https://grants.stutech.org",
-  "twitter": "@stutechgrants",
-  "img": "https://grants.stutech.org/card.png",
+  "name": "Hack Pennsylvania",
+  "title": "Hack Pennsylvania – PA’s premiere high school hackathon",
+  "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2018.",
+  "url": "https://hackpenn.com",
+  "twitter": "@hackpenn",
+  "img": "https://hackpenn.com/card.png",
   "urls": {
-    "twitter": "https://twitter.com/stutechgrants",
-    "email": "mailto:theo@stutech.org"
+    "twitter": "https://twitter.com/hackpenn",
+    "instagram": "https://www.instagram.com/hackpenn",
+    "facebook": "https://www.facebook.com/hackpenn",
+    "email": "mailto:lachlan@hackpenn.com"
   },
   "org": {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "StuTech",
-    "url": "https://grants.stutech.org",
-    "logo": "https://grants.stutech.org/flag.png",
+    "name": "hackpenn",
+    "url": "https://hackpenn.com",
+    "logo": "https://hackpenn.com/flag.png",
     "sameAs": [
-      "https://twitter.com/stutech",
-      "https://www.instagram.com/stutech",
-      "https://www.facebook.com/stutech"
+      "https://twitter.com/hackpenn",
+      "https://www.instagram.com/hackpenn",
+      "https://www.facebook.com/hackpenn"
     ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "email": "theo@stutech.org",
+        "email": "lachlan@hackpenn.com",
         "contactType": "customer support",
-        "url": "https://grants.stutech.org"
+        "url": "https://hackpenn.com"
       }
     ]
   },
-  "apply": {
-    "currentApplications": 32,
-    "applicationSlots": 50,
-    "nextRound": "2018-10-15",
-    "nextRoundCloses": "2018-11-19"
-  },
-  "judges": [
-    {
-      "name": "Roy Bahat",
-      "twitter": "roybahat",
-      "bio": "Head @ Bloomberg Beta",
-      "current": true
-    },
-    {
-      "name": "Brandon Kessler",
-      "twitter": "bkessler",
-      "bio": "Founder of Devpost",
-      "current": true
-    },
-    {
-      "name": "Geoff Ralston",
-      "twitter": "gralston",
-      "bio": "Education @ YC (Imagine K12)",
-      "current": true
-    },
-    {
-      "name": "Nate Kontny",
-      "twitter": "natekontny",
-      "bio": "Founder of Draft, former Highrise CEO",
-      "current": true
-    },
-    {
-      "name": "Ryan Hoover",
-      "twitter": "rrhoover",
-      "bio": "Founder of Product Hunt",
-      "current": true
-    },
-    {
-      "name": "Brad Feld",
-      "twitter": "bfeld",
-      "bio": "VC @ Foundry Group",
-      "current": true
-    },
-    {
-      "name": "Paul Berberian",
-      "twitter": "pberberian",
-      "bio": "Founder of Sphero",
-      "current": true
-    },
-    {
-      "name": "Dale Stephens",
-      "twitter": "DaleJStephens",
-      "bio": "Director @ Test Kitchen Capital, Founder of Uncollege",
-      "current": true
-    },
-    {
-      "name": "Quinn Slack",
-      "twitter": "sqs",
-      "bio": "Founder of Sourcegraph",
-      "current": true
-    },
-    {
-      "name": "Rahul Vohra",
-      "twitter": "rahulvohra",
-      "bio": "Founder/CEO of Superhuman",
-      "current": true
-    }
-  ],
-  "sponsors": [
-    {
-      "name": "repl.it",
-      "image": "replit.svg",
-      "link":"https://repl.it"
-    }
-  ]
+  "sponsors": []
 }

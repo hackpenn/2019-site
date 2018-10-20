@@ -35,7 +35,7 @@ export default ({ children }) => (
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: url }
       ])}
-      <link rel="stylesheet" href="/fonts.css" />
+      <link rel="stylesheet" href="https://rsms.me/inter/inter-ui.css" />
       <script type="application/ld+json" children={JSON.stringify(org)} />
     </Helmet>
     {children}

@@ -32,7 +32,7 @@ export default () => (
       >
         <Q>My company wants to get involved, who do we contact?</Q>
         <P>
-          Shoot us an <Link href="mailto:donate@stutech.org">email</Link>!
+          Shoot us an <Link href="mailto:donate@hackpenn.com">email</Link>!
         </P>
 
         <Q>How much money is this first grant?</Q>
@@ -75,7 +75,7 @@ export default () => (
         </Q>
         <P>
           The best we can potentially do is reserve you a slot if someone drops
-          out, shoot us an <Link href="mailto:hello@stutech.org">email</Link>.
+          out, shoot us an <Link href="mailto:hello@hackpenn.com">email</Link>.
         </P>
 
         <Q>
@@ -83,11 +83,13 @@ export default () => (
           do I go?
         </Q>
         <P>
-          <Link href="mailto:theo@stutech.org">Let’s chat!</Link>
+          <Link href="mailto:theo@hackpenn.com">Let’s chat!</Link>
         </P>
 
         <Q>I have a question that you didn't answer.</Q>
-        <P><Link href="mailto:hello@stutech.org">Email me</Link></P>
+        <P>
+          <Link href="mailto:hello@hackpenn.com">Email me</Link>
+        </P>
       </Box>
     </Container>
     <Apply />

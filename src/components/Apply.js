@@ -32,19 +32,18 @@ const Apply = props => (
     <Pattern shape="square" />
     <Pattern shape="circle" />
     <Container maxWidth={32} px={3} py={4} style={{ zIndex: 1 }}>
-      <Heading.h2 fontSize={[5, 6]}>Apply now.</Heading.h2>
+      <Heading.h2 fontSize={[5, 6]}>Register now.</Heading.h2>
       <Text fontSize={[3, 4]} my={3}>
         We can’t wait to see what you’ll make.
       </Text>
       <Action
         mt={3}
-        is="a"
-        href="/apply"
+        to="/register"
         bg={theme.colors.primary}
         inverted
         chevronRight
       >
-        Apply
+        Register
       </Action>
     </Container>
   </Section>

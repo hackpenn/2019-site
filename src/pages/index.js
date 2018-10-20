@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Divider,
+  Image,
   Text
 } from '@hackclub/design-system'
 import { theme } from 'theme'
@@ -77,37 +78,33 @@ const Bannerline = props => (
 export default () => (
   <Layout>
     <Nav />
-    <Box.header px={2} pt={[4, 5, 6]} pb={[3, 5]}>
-      <Container width={1} color={theme.colors.black} px={3}>
+    <Box.header
+      bg={theme.colors.primaryDark}
+      color={theme.colors.white}
+      px={2}
+      pt={[4, 5]}
+      pb={[3, 5, 6]}
+    >
+      <Container width={1} px={3}>
+        <Image alt="Hack Pennsylvania logo" src="/hero.svg" />
         <Heading.h1
-          fontSize={[6, 7, 8, 9]}
-          mb={2}
-          style={{ lineHeight: '1.125' }}
+          fontSize={[4, 5, 6]}
+          mt={3}
+          style={{
+            fontWeight: '300',
+            fontFamily: theme.font
+          }}
         >
-          We give grants to students moving STEM forward.
+          Pennsylvania’s premiere high&nbsp;school hackathon is back.
         </Heading.h1>
-        <Heading.h2 fontSize={[4, 5]} style={{ maxWidth: '52rem' }}>
-          StuTech is a non-profit giving money to high schoolers creating
-          innovative & impactful STEM projects.
-        </Heading.h2>
         <Flex align="center" wrap mt={4}>
           <Action
-            to="/apply"
-            children="Apply"
+            to="/register"
+            children="Register"
             fontSize={[3, 4]}
             bg={theme.colors.primary}
             chevronRight
             mr={3}
-            mb={3}
-          />
-          <Action
-            is="outline"
-            href="http://eepurl.com/dKcNzE"
-            children="Get Updates"
-            fontSize={[3, 4]}
-            bg={theme.colors.primary}
-            inverted
-            chevronRight
             mb={3}
           />
         </Flex>
@@ -125,7 +122,7 @@ export default () => (
           <Bannerline />
           <Headline>Grants, done right.</Headline>
           <Lead maxWidth={32}>
-            No bureaucracy, no BS: StuTech Grants are the end of 18+
+            No bureaucracy, no BS: Hack Pennsylvania are the end of 18+
             requirements, weeks of waiting, expense forms, and the rest of the
             mess of traditional grants. Game on.
           </Lead>
@@ -157,18 +154,6 @@ export default () => (
           Every application is judged by the best in the industry.
         </Headline>
       </Banner>
-      <Slider duration={32}>
-        {data.judges.slice(0, Math.floor(data.judges.length / 2)).map(judge => (
-          <Bio {...judge} />
-        ))}
-      </Slider>
-      <Slider duration={48} pt={3} pb={[4, 5]}>
-        {data.judges
-          .slice(Math.ceil(data.judges.length / 2), data.judges.length)
-          .map(judge => (
-            <Bio {...judge} />
-          ))}
-      </Slider>
     </Box.section>
     <Container
       width={1}
@@ -181,8 +166,8 @@ export default () => (
         <Bannerline />
         <Headline>Here’s the breakdown.</Headline>
         <Lead maxWidth={32}>
-          StuTech Grants are easy to apply for, quick to receive, & maximize you
-          moving your project forward.
+          Hack Pennsylvania are easy to apply for, quick to receive, & maximize
+          you moving your project forward.
         </Lead>
       </Banner>
       <Modules>
@@ -208,7 +193,7 @@ export default () => (
         />
       </Modules>
     </Container>
-    <Box.section bg={theme.colors.snow}>
+    {/* <Box.section bg={theme.colors.snow}>
       <Container
         width={1}
         maxWidth={36}
@@ -223,7 +208,7 @@ export default () => (
         </Banner>
         <Sponsors />
       </Container>
-    </Box.section>
+    </Box.section> */}
     <Apply />
     <Footer />
   </Layout>

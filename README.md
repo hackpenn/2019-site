@@ -1,3 +1,3 @@
-# StuTech Grants
+# Hack Pennsylvania
 
-[**grants.stutech.org**](https://grants.stutech.org)
+[**hackpenn.com**](https://hackpenn.com)

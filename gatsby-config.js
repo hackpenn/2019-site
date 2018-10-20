@@ -2,8 +2,8 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    name: 'StuTech',
-    siteUrl: 'https://grants.stutech.org'
+    name: 'hackpenn',
+    siteUrl: 'https://hackpenn.com'
   },
   plugins: [
     {
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'StuTech',
-        short_name: 'StuTech',
+        name: 'hackpenn',
+        short_name: 'hackpenn',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#2b34b6',

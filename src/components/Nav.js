@@ -5,7 +5,12 @@ import { theme } from 'theme'
 import Flag from 'components/Flag'
 import Link from 'gatsby-link'
 
-const Base = styled(Box).attrs({ py: 3, width: 1 })`
+const Base = styled(Box).attrs({
+  bg: theme.colors.primaryDark,
+  py: 3,
+  width: 1
+})`
+  font-family: ${theme.fontSans};
   z-index: 4;
 `
 
@@ -24,7 +29,7 @@ export const Item = styled(A.withComponent(Link)).attrs({
 })`
   color: inherit;
   opacity: 0.875;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -62,15 +67,13 @@ export const Item = styled(A.withComponent(Link)).attrs({
   }
 `
 
-const Nav = ({ color = theme.colors.primary, ...props }) => (
+const Nav = ({ color = theme.colors.white, ...props }) => (
   <Base role="banner" {...props}>
     <Inner color={color} py={[1, 0]}>
       <Flag />
       <Box role="navigation" ml={3}>
-        <Item to="/apply" children="Apply" />
+        <Item to="/register" children="Register" />
         <Item to="/about" children="About" />
-        <Item to="/faq" children="FAQ" />
-        {/* <Item to="/donate" children="Donate" /> */}
       </Box>
     </Inner>
   </Base>

@@ -1,9 +1,6 @@
 import { theme } from '@hackclub/design-system'
 import palx from 'palx'
 
-const primary = '#087fd9'
-export const palette = palx(primary)
-
 export const grays = {
   black: '#1f2d3d',
   steel: '#273444',
@@ -11,20 +8,26 @@ export const grays = {
   grey: '#8492a6',
   smoke: '#e0e6ed',
   snow: '#f9fafc',
-  brown: '#877457',
   white: '#ffffff'
 }
 
 export const brand = {
-  primary: '#2b34b6',
+  primary: '#3fb34f',
+  primaryWash: '#acffb8',
+  primaryDark: '#1f5927',
   alt: '#ffa235',
-  accent: palette.fuschia[5],
-  success: palette.green[5],
-  info: palette.blue[5],
-  warning: palette.orange[5],
-  error: palette.red[7],
-  muted: grays.grey
+  altWash: '#ffdc89',
+  accent: '#ff5a5f',
+  error: '#b23f42',
+  success: '#5aff71',
+  info: '#00bdde',
+  infoWash: '#7cecff'
 }
+
+// for DS input
+brand.blue = [brand.altWash, brand.altWash, brand.altWash]
+
+export const palette = palx(brand.alt)
 
 export const colors = {
   ...palette,
@@ -37,11 +40,11 @@ theme.colors = colors
 const baseFamily =
   '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif'
 
-const sans = '"Klima Web"'
-const display = '"Glosa Display"'
+const mono = '"Katwijk Mono"'
+const sans = '"Inter UI"'
 
-theme.font = `${sans},${baseFamily}`
-theme.fontDisplay = `${display},${baseFamily}`
+theme.font = `${mono},${baseFamily}`
+theme.fontSans = `${sans},${baseFamily}`
 theme.bold = '700'
 
 export default theme

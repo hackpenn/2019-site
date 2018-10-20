@@ -14,7 +14,7 @@ const Module = ({ icon, name, body, ...props }) => (
     />
     <Box>
       <Heading.h3
-        style={{ fontWeight: '500' }}
+        style={{ fontWeight: '600' }}
         mb={1}
         fontSize={[3, 4]}
         children={name}

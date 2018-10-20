@@ -26,10 +26,12 @@ const Footer = ({ children }) => (
     {children}
     <Flex justify="center" align="center" wrap mb={3}>
       <Service href={urls.twitter} service="twitter" />
+      <Service href={urls.instagram} service="instagram" />
+      <Service href={urls.facebook} service="facebook" />
       <Service href={urls.email} service="email" />
     </Flex>
     <Heading.h3 fontSize={2} align="center" caps mb={2}>
-      StuTech Grants
+      Hack Pennsylvania
     </Heading.h3>
     <Text mx="auto" style={{ maxWidth: '20rem' }} fontSize={1}>
       Fiscally sponsored by The Hack Foundation. Nonprofit EIN: 81-2908499.

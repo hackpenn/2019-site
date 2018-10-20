@@ -36,7 +36,7 @@ injectGlobal`
   }
   h1,
   h2 {
-    font-family: ${config.fontDisplay};
+    font-family: ${config.fontSans};
   }
   h1 + h2 {
     font-family: inherit;

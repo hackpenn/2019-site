@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  Avatar,
-  Box,
-  Container,
-  Heading,
-  Text
-} from '@hackclub/design-system'
+import { Avatar, Box, Container, Heading, Text } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
 import Nav from 'components/Nav'
@@ -71,12 +65,12 @@ export default () => (
           never have direct access to the money, having to fill out bureaucratic
           expense forms.
         </Text>
-        <Text fontSize={[3, 4]} style={{ fontWeight: '500' }} my={[3, 4]}>
+        <Text fontSize={[3, 4]} style={{ fontWeight: '600' }} my={[3, 4]}>
           <Highlight>
             These kinds of barriers are squandering talent everywhere
           </Highlight>
-          — forcing young people with innovative new ideas to bury them
-          due to a lack of funding.
+          — forcing young people with innovative new ideas to bury them due to a
+          lack of funding.
         </Text>
         <Text fontSize={[3, 4]} my={3}>
           We're changing that. We’re funding the best ideas from the brightest

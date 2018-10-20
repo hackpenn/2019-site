@@ -51,7 +51,7 @@
   src: url('/fonts/calibre/calibre_medium.woff2') format('woff2'),
     url('/fonts/calibre/calibre_medium.woff') format('woff'),
     url('/fonts/calibre/calibre_medium.eot') format('eot');
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -76,7 +76,7 @@
   font-family: 'Klima Web';
   src: url('/fonts/klima/klima-medium-web.woff2') format('woff2'),
     url('/fonts/klima/klima-medium-web.woff') format('woff');
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
