@@ -2,8 +2,8 @@
   "name": "@hackpenn/site",
   "description": "coming soon",
   "version": "0.0.1",
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
-  "license": "GPL-3.0",
+  "author": "Lachlan Campbell <lachlan@hackpenn.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "gatsby build",
