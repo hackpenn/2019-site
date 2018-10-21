@@ -43,7 +43,7 @@ const baseFamily =
 const mono = '"Katwijk Mono Web"'
 const sans = '"Inter UI"'
 
-theme.font = `${mono},${baseFamily}`
-theme.fontSans = `${sans},${baseFamily}`
+theme.font = `${sans},${baseFamily}`
+theme.mono = `${mono},${baseFamily}`
 
 export default theme

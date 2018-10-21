@@ -34,13 +34,10 @@ injectGlobal`
     line-height: 1.5;
     border-top: 4px solid ${theme.colors.primary};
   }
-  h1,
-  h2 {
-    font-family: ${config.fontSans};
-  }
-  h1 + h2 {
-    font-family: inherit;
-    font-weight: 400 !important;
+  h1 + h2,
+  p {
+    font-family: ${config.mono};
+    font-weight: normal !important;
   }
   a {
     box-shadow: none;

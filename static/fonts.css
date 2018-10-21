@@ -15,14 +15,14 @@
   font-family: 'Inter UI';
   font-style: normal;
   font-weight: bold;
-  src: url('/inter-ui/Inter-UI-Regular.woff2?v=3.0') format('woff2'),
-    url('/inter-ui/Inter-UI-Regular.woff?v=3.0') format('woff');
+  src: url('/inter-ui/Inter-UI-Regular.woff2') format('woff2'),
+    url('/inter-ui/Inter-UI-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inter UI';
   font-style: regular;
   font-weight: normal;
-  src: url('/inter-ui/Inter-UI-SemiBold.woff2?v=3.0') format('woff2'),
-    url('/inter-ui/Inter-UI-SemiBold.woff?v=3.0') format('woff');
+  src: url('/inter-ui/Inter-UI-SemiBold.woff2') format('woff2'),
+    url('/inter-ui/Inter-UI-SemiBold.woff') format('woff');
 }

@@ -6,8 +6,9 @@ const Flag = styled(Link).attrs({
   to: '/',
   'aria-label': 'Homepage'
 })`
-  background: url(/flag.svg) no-repeat;
+  background: url(/flag--light.svg) no-repeat;
   background-size: auto 100%;
+  border-radius: ${theme.pill};
   flex-shrink: 0;
   width: 64px;
   height: 64px;

@@ -17,6 +17,7 @@ const Action = ({ is = 'link', ...props }) => {
 export default styled(Action)`
   border-radius: ${theme.radii[1]} !important;
   box-shadow: none !important;
+  font-family: ${theme.font};
   &:focus,
   &:hover {
     box-shadow: ${theme.boxShadows[1]} !important;

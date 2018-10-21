@@ -84,8 +84,15 @@ export default () => (
       pb={[3, 5, 6]}
     >
       <Container width={1} px={3}>
-        <Image alt="Hack Pennsylvania logo" src="/hero.svg" />
-        <Heading.h1 fontSize={[4, 5, 6]} mt={3}>
+        <Image
+          alt="Hack Pennsylvania logo"
+          src={require('../../static/hero.svg')}
+        />
+        <Heading.h1
+          fontSize={[4, 5, 6]}
+          style={{ fontFamily: theme.mono }}
+          mt={3}
+        >
           Pennsylvania’s premiere high&nbsp;school hackathon is back.
         </Heading.h1>
         <Flex align="center" wrap mt={4}>

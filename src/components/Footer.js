@@ -33,7 +33,7 @@ const Footer = ({ children }) => (
     <Heading.h3 fontSize={2} align="center" caps mb={2}>
       Hack Pennsylvania
     </Heading.h3>
-    <Text mx="auto" style={{ maxWidth: '20rem' }} fontSize={1}>
+    <Text mx="auto" style={{ maxWidth: '24rem' }} fontSize={1}>
       Fiscally sponsored by The Hack Foundation. Nonprofit EIN: 81-2908499.
     </Text>
   </Box.footer>
