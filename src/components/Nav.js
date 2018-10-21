@@ -33,38 +33,11 @@ export const Item = styled(A.withComponent(Link)).attrs({
   position: relative;
   display: inline-block;
   cursor: pointer;
-  transition: ${theme.transition} all;
+  transition: ${theme.transition} opacity;
 
-  ${theme.mediaQueries.md} {
-    &:hover {
-      opacity: 1;
-
-      &:after,
-      &:before {
-        width: 100%;
-        left: 0;
-      }
-    }
-  }
-
-  &:after,
-  &:before {
-    content: '';
-    position: absolute;
-    top: calc(100% + ${theme.space[1]}px);
-    width: 0;
-    right: 0;
-    height: 3px;
-  }
-
-  &:before {
-    transition: width 0.25s cubic-bezier(0.5, 0.2, 0, 0.9) 0.125s;
-    background: ${theme.colors.alt};
-  }
-
-  &:after {
-    transition: width 0.125s cubic-bezier(0.25, 0.2, 0.25, 0.75);
-    background: ${theme.colors.primary};
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 `
 
