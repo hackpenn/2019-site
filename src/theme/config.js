@@ -21,7 +21,8 @@ export const brand = {
   error: '#b23f42',
   success: '#5aff71',
   info: '#00bdde',
-  infoWash: '#7cecff'
+  infoWash: '#7cecff',
+  muted: grays.grey
 }
 
 // for DS input

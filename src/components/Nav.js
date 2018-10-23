@@ -16,14 +16,14 @@ const Base = styled(Box).attrs({
 
 const Inner = styled(Container.withComponent(Flex)).attrs({
   px: 3,
-  justify: ['center', 'space-between'],
+  justify: 'space-between',
   align: 'center',
   mx: 'auto',
   role: 'navigation'
 })``
 
 export const Item = styled(A.withComponent(Link)).attrs({
-  fontSize: 3,
+  fontSize: [2, 3],
   my: 1,
   mx: [2, 3]
 })`

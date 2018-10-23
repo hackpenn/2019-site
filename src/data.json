@@ -31,5 +31,13 @@
       }
     ]
   },
+  "leaders": [
+    { "name": "Lachlan Campbell", "pronouns": "they/them" },
+    { "name": "Joy Liu", "pronouns": "she/her" },
+    { "name": "Jasmine Cao", "pronouns": "she/her" },
+    { "name": "Theo Bleier", "pronouns": "he/him" },
+    { "name": "Matthew Stanciu", "pronouns": "he/him" },
+    { "name": "Zane Davis-Barrs", "pronouns": "he/him" }
+  ],
   "sponsors": []
 }

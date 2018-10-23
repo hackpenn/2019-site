@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'Inter UI';
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   src: url('/inter-ui/Inter-UI-Regular.woff2') format('woff2'),
     url('/inter-ui/Inter-UI-Regular.woff') format('woff');
 }
@@ -22,7 +22,15 @@
 @font-face {
   font-family: 'Inter UI';
   font-style: regular;
-  font-weight: normal;
-  src: url('/inter-ui/Inter-UI-SemiBold.woff2') format('woff2'),
-    url('/inter-ui/Inter-UI-SemiBold.woff') format('woff');
+  font-weight: 500;
+  src: url('/inter-ui/Inter-UI-Medium.woff2') format('woff2'),
+    url('/inter-ui/Inter-UI-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: regular;
+  font-weight: bold;
+  src: url('/inter-ui/Inter-UI-Black.woff2') format('woff2'),
+    url('/inter-ui/Inter-UI-Black.woff') format('woff');
 }

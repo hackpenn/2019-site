@@ -34,6 +34,11 @@ injectGlobal`
     line-height: 1.5;
     border-top: 4px solid ${theme.colors.primary};
   }
+  h1,
+  h2,
+  h3 {
+    font-weight: 900;
+  }
   h1 + h2,
   p {
     font-family: ${config.mono};
@@ -50,7 +55,7 @@ injectGlobal`
   p > a,
   strong,
   b {
-    font-weight: 700 !important;
+    font-weight: bold !important;
   }
 `
 
