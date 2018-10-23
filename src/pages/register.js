@@ -7,6 +7,13 @@ import Nav from 'components/Nav'
 import BG from 'components/BG'
 import Footer from 'components/Footer'
 
+// awful temp solution for sticky footer, see L53
+injectGlobal`
+  html, body {
+    height: 100%;
+  }
+`
+
 const Headline = styled(Heading.h2).attrs({
   color: 'white',
   fontSize: [6, 7],
