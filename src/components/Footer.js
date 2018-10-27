@@ -28,6 +28,7 @@ const Footer = ({ children }) => (
       <Service href={urls.twitter} service="twitter" />
       <Service href={urls.instagram} service="instagram" />
       <Service href={urls.facebook} service="facebook" />
+      <Service href={urls.messenger} service="messenger" />
       <Service href={urls.email} service="email" />
     </Flex>
     <Heading.h3 fontSize={2} align="center" caps mb={2}>
