@@ -242,7 +242,7 @@ export default () => (
         <Text fontSize={3} color={theme.colors.slate}>
           Want to sponsor Hack Pennsylvania?{' '}
           <A
-            href="mailto:theo@hackpenn.com"
+            href="mailto:team@hackpenn.com"
             color={theme.colors.primary}
             style={{ fontFamily: theme.font }}
             hoverline

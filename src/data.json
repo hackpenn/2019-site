@@ -10,7 +10,7 @@
     "instagram": "https://www.instagram.com/hackpenn",
     "facebook": "https://fb.me/hackpennsylvania",
     "messenger": "https://m.me/hackpennsylvania",
-    "email": "mailto:lachlan@hackpenn.com"
+    "email": "mailto:team@hackpenn.com"
   },
   "org": {
     "@context": "https://schema.org",
@@ -26,7 +26,7 @@
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "email": "lachlan@hackpenn.com",
+        "email": "team@hackpenn.com",
         "contactType": "customer support",
         "url": "https://hackpenn.com"
       }
