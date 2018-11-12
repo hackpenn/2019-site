@@ -59,7 +59,9 @@ export default () => (
           The event is totally free, lots of food, drinks, and prizes included.
         </Heading.h2>
         <Sheet mt={4}>
-          <RegistrationForm />
+          <Container maxWidth={32} align="center">
+            <RegistrationForm />
+          </Container>
         </Sheet>
         <Sheet
           p={[3, 4]}
