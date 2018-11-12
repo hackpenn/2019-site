@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { withFormik } from 'formik'
 import * as yup from 'yup'
 import 'unfetch/polyfill'
-import { Field, Button } from '@hackclub/design-system'
+import { Field, Button, Box, Text } from '@hackclub/design-system'
 import { theme } from 'theme'
 
 const FormField = styled(Field).attrs({
@@ -12,139 +12,159 @@ const FormField = styled(Field).attrs({
   border: 1px solid ${theme.colors.gray[3]};
 `
 
-const InnerForm = ({
-  values,
-  errors,
-  handleChange,
-  handleSubmit,
-  isSubmitting
-}) => (
-  <form onSubmit={handleSubmit}>
-    <FormField
-      type="text"
-      name="first_name"
-      label="First Name"
-      error={errors.first_name}
-      value={values.first_name}
-      onChange={handleChange}
-    />
-    <FormField
-      type="text"
-      name="last_name"
-      label="Last Name"
-      error={errors.last_name}
-      value={values.last_name}
-      onChange={handleChange}
-    />
-    <FormField
-      type="email"
-      name="email"
-      label="Email"
-      error={errors.email}
-      value={values.email}
-      onChange={handleChange}
-    />
-    <FormField
-      type="tel"
-      name="phone_number"
-      label="Phone Number"
-      error={errors.phone_number}
-      value={values.phone_number}
-      onChange={handleChange}
-    />
-    <FormField
-      type="select"
-      name="gender"
-      label="Gender"
-      error={errors.gender}
-      value={values.gender}
-      onChange={handleChange}
-    >
-      <option value="" default>
-        Select one
-      </option>
-      <option value="Female">Female</option>
-      <option value="Male">Male</option>
-      <option value="Non-binary">Non-binary</option>
-      <option value="Prefer not to answer">Prefer not to answer</option>
-      <option value="Other">Other</option>
-    </FormField>
-    <FormField
-      type="select"
-      name="grade"
-      label="Grade"
-      error={errors.grade}
-      value={values.grade}
-      onChange={handleChange}
-    >
-      <option value="" default>
-        Select one
-      </option>
-      <option value="8">8th (Class of ’23)</option>
-      <option value="9">9th (Class of ’22)</option>
-      <option value="10">10th (Class of ’21)</option>
-      <option value="11">11th (Class of ’20)</option>
-      <option value="12">12th (Class of ’19)</option>
-    </FormField>
-    <FormField
-      type="select"
-      name="shirt_size"
-      label="Shirt Size"
-      error={errors.shirt_size}
-      value={values.shirt_size}
-      onChange={handleChange}
-    >
-      <option value="" default>
-        Select one
-      </option>
-      <option value="S">S</option>
-      <option value="M">M</option>
-      <option value="L">L</option>
-      <option value="XL">XL</option>
-    </FormField>
-    <FormField
-      type="text"
-      name="dietary_restrictions"
-      label="Dietary Restrictions"
-      error={errors.dietary_restrictions}
-      value={values.dietary_restrictions}
-      onChange={handleChange}
-    />
-    <FormField
-      type="select"
-      name="reimbursable"
-      label="Interested in travel reimbursement?"
-      error={errors.reimbursable}
-      value={values.reimbursable}
-      onChange={handleChange}
-    >
-      <option value="" default>
-        Select one
-      </option>
-      <option value="false">No</option>
-      <option value="true">Yes</option>
-    </FormField>
-    <FormField
-      type="text"
-      name="emergency_email"
-      label="Emergency Contact Email"
-      error={errors.emergency_email}
-      value={values.emergency_email}
-      onChange={handleChange}
-    />
-    <FormField
-      type="tel"
-      name="emergency_phone"
-      label="Emergency Contact Phone"
-      error={errors.emergency_phone}
-      value={values.emergency_phone}
-      onChange={handleChange}
-    />
-    <Button type="submit" onClick={handleSubmit} disabled={isSubmitting}>
-      Submit
-    </Button>
-  </form>
-)
+class InnerForm extends React.Component {
+  state = {
+    submitted: false
+  }
+
+  render() {
+    const {
+      values,
+      errors,
+      handleChange,
+      handleSubmit,
+      isSubmitting
+    } = this.props
+    const { submitted } = this.state
+
+    return submitted ? (
+      <Box align="center">
+        <Text fontSize={4}>
+          Thanks for signing up!{' '}
+          <span role="img" aria-label="Celebration emoji">
+            🎉
+          </span>
+        </Text>
+      </Box>
+    ) : (
+      <form onSubmit={handleSubmit}>
+        <FormField
+          type="text"
+          name="first_name"
+          label="First Name"
+          error={errors.first_name}
+          value={values.first_name}
+          onChange={handleChange}
+        />
+        <FormField
+          type="text"
+          name="last_name"
+          label="Last Name"
+          error={errors.last_name}
+          value={values.last_name}
+          onChange={handleChange}
+        />
+        <FormField
+          type="email"
+          name="email"
+          label="Email"
+          error={errors.email}
+          value={values.email}
+          onChange={handleChange}
+        />
+        <FormField
+          type="tel"
+          name="phone_number"
+          label="Phone Number"
+          error={errors.phone_number}
+          value={values.phone_number}
+          onChange={handleChange}
+        />
+        <FormField
+          type="select"
+          name="gender"
+          label="Gender"
+          error={errors.gender}
+          value={values.gender}
+          onChange={handleChange}
+        >
+          <option value="" default>
+            Select one
+          </option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Non-binary">Non-binary</option>
+          <option value="Prefer not to answer">Prefer not to answer</option>
+          <option value="Other">Other</option>
+        </FormField>
+        <FormField
+          type="select"
+          name="grade"
+          label="Grade"
+          error={errors.grade}
+          value={values.grade}
+          onChange={handleChange}
+        >
+          <option value="" default>
+            Select one
+          </option>
+          <option value="8">8th (Class of ’23)</option>
+          <option value="9">9th (Class of ’22)</option>
+          <option value="10">10th (Class of ’21)</option>
+          <option value="11">11th (Class of ’20)</option>
+          <option value="12">12th (Class of ’19)</option>
+        </FormField>
+        <FormField
+          type="select"
+          name="shirt_size"
+          label="Shirt Size"
+          error={errors.shirt_size}
+          value={values.shirt_size}
+          onChange={handleChange}
+        >
+          <option value="" default>
+            Select one
+          </option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </FormField>
+        <FormField
+          type="text"
+          name="dietary_restrictions"
+          label="Dietary Restrictions"
+          error={errors.dietary_restrictions}
+          value={values.dietary_restrictions}
+          onChange={handleChange}
+        />
+        <FormField
+          type="select"
+          name="reimbursable"
+          label="Interested in travel reimbursement?"
+          error={errors.reimbursable}
+          value={values.reimbursable}
+          onChange={handleChange}
+        >
+          <option value="" default>
+            Select one
+          </option>
+          <option value="false">No</option>
+          <option value="true">Yes</option>
+        </FormField>
+        <FormField
+          type="text"
+          name="emergency_email"
+          label="Emergency Contact Email"
+          error={errors.emergency_email}
+          value={values.emergency_email}
+          onChange={handleChange}
+        />
+        <FormField
+          type="tel"
+          name="emergency_phone"
+          label="Emergency Contact Phone"
+          error={errors.emergency_phone}
+          value={values.emergency_phone}
+          onChange={handleChange}
+        />
+        <Button type="submit" onClick={handleSubmit} disabled={isSubmitting}>
+          Submit
+        </Button>
+      </form>
+    )
+  }
+}
 
 export default withFormik({
   mapPropsToValues: () => ({
