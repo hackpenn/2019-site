@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { withFormik } from 'formik'
 import * as yup from 'yup'
 import 'unfetch/polyfill'
-import { Field, Button, Flex, Text } from '@hackclub/design-system'
+import { Field, Button } from '@hackclub/design-system'
 import { theme } from 'theme'
 
 const FormField = styled(Field).attrs({
@@ -124,25 +124,6 @@ const InnerForm = ({
       <option value="false">No</option>
       <option value="true">Yes</option>
     </FormField>
-    {/*<Flex
-      align="center"
-      color="primary"
-      ml={1}
-      onClick={handleChange('reimbursable')}
-    >
-      <Text.span caps bold={!values.reimbursable}>
-        No
-      </Text.span>
-      <Switch
-        color="primary"
-        role="checkbox"
-        checked={values.reimbursable}
-        mx={1}
-      />
-      <Text.span caps bold={values.reimbursable}>
-        Yes
-      </Text.span>
-    </Flex>*/}
     <FormField
       type="text"
       name="emergency_email"
