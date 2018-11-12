@@ -1,14 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  Box,
-  Flex,
-  Text,
-  Container,
-  Icon,
-  Button,
-  Avatar
-} from '@hackclub/design-system'
+import { Box, Text, Icon, Button, Avatar } from '@hackclub/design-system'
 import { theme } from 'theme'
 import data from 'data'
 

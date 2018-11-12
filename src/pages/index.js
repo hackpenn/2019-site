@@ -12,7 +12,6 @@ import {
   Icon
 } from '@hackclub/design-system'
 import { theme } from 'theme'
-import data from 'data'
 import Layout from 'components/Layout'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
@@ -21,15 +20,6 @@ import Sponsors from 'components/Sponsors'
 import Leadership from 'components/Leadership'
 import Apply from 'components/Apply'
 import Footer from 'components/Footer'
-
-const Banner = styled(Container).attrs({
-  maxWidth: 48,
-  mt: 5,
-  mb: [3, 4],
-  mx: 'auto',
-  px: 3,
-  align: ['left', 'center']
-})``
 
 const Headline = styled(Heading.h2).attrs({
   color: 'primaryDark',
