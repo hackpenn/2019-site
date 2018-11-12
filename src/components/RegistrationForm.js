@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { withFormik } from 'formik'
 import * as yup from 'yup'
 import 'unfetch/polyfill'
-import { Field, Button, Box, Text } from '@hackclub/design-system'
+import { Field, LargeButton, Box, Text } from '@hackclub/design-system'
 import { theme } from 'theme'
 
 const FormField = styled(Field).attrs({
@@ -158,9 +158,14 @@ class InnerForm extends React.Component {
           value={values.emergency_phone}
           onChange={handleChange}
         />
-        <Button type="submit" onClick={handleSubmit} disabled={isSubmitting}>
+        <LargeButton
+          mt={3}
+          type="submit"
+          onClick={handleSubmit}
+          disabled={isSubmitting}
+        >
           Submit
-        </Button>
+        </LargeButton>
       </form>
     )
   }
