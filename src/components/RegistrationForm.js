@@ -5,7 +5,6 @@ import * as yup from 'yup'
 import 'unfetch/polyfill'
 import { Field, Button, Flex, Text } from '@hackclub/design-system'
 import { theme } from 'theme'
-import Switch from 'components/Switch'
 
 const FormField = styled(Field).attrs({
   bg: theme.colors.white
@@ -199,5 +198,20 @@ export default withFormik({
       .email(),
     emergency_phone: yup.string().required()
   }),
-  handleSubmit: (attendee, { setSubmitting }) => {}
+  handleSubmit: (attendee, { setSubmitting }) => {
+    setSubmitting(true)
+    fetch(
+      'https://h-and-m.herokuapp.com/api/v1/events/hack-pennsylvania/attendees',
+      {
+        method: 'POST',
+        body: JSON.stringify({ attendee }),
+        headers: { 'Content-Type': 'application/json' }
+      }
+    ).then(res => {
+      setSubmitting(false)
+      if (res.status === 200) {
+        this.setState({ submitted: true })
+      }
+    })
+  }
 })(InnerForm)
