@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Container, Heading, Button } from '@hackclub/design-system'
+import { Box, Container, Heading, Link } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
 import Nav from 'components/Nav'
 import BG from 'components/BG'
 import Footer from 'components/Footer'
 import Sheet from 'components/Sheet'
+import IconButton from 'components/IconButton'
 
 const Headline = styled(Heading.h2).attrs({
   color: 'white',
@@ -25,26 +26,17 @@ const twitterURL = (text, u = url) =>
 const facebookURL = (text, u = url) =>
   `https://www.facebook.com/sharer/sharer.php?u=${u}`
 
-const InlineButton = Button.extend`
-  display: inline-flex;
-  align-items: center;
-  div {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 18px;
-    height: 18px;
-  }
-`
 const ShareButton = ({ children, ...props }) => (
-  <InlineButton
-    target="_blank"
-    aria-label={`Share on ${props.service}`}
-    f={2}
-    {...props}
-  >
-    <Box mr={2} />
-    {children || props.service}
-  </InlineButton>
+  <Link href={props.url} target="_blank" rel="noopener noreferrer">
+    <IconButton
+      aria-label={`Share on ${props.service}`}
+      f={2}
+      glyph={props.service.toLowerCase()}
+      {...props}
+    >
+      {children || props.service}
+    </IconButton>
+  </Link>
 )
 
 export default () => (
@@ -82,14 +74,14 @@ export default () => (
         </Heading.h2>
         <ShareButton
           service="Twitter"
-          href={twitterURL(
+          url={twitterURL(
             'Check out @hackpenn, PA’s largest high school hackathon!',
             url
           )}
           bg="#1da1f2"
           mr={3}
         />
-        <ShareButton service="Facebook" href={facebookURL(url)} bg="#3b5998" />
+        <ShareButton service="Facebook" url={facebookURL(url)} bg="#3b5998" />
       </Sheet>
     </Box>
     <Footer />
