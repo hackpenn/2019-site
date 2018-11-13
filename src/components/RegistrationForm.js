@@ -228,6 +228,7 @@ export default class RegistrationForm extends React.Component {
               type="submit"
               onClick={handleSubmit}
               disabled={isSubmitting}
+              scale
             >
               Submit
             </LargeButton>
