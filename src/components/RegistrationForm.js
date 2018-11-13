@@ -85,7 +85,7 @@ export default class RegistrationForm extends React.Component {
       >
         {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
-            <Box my={3}>
+            <Box mb={3}>
               <Heading.h3>Attendee Information</Heading.h3>
               <Text>We can’t wait to meet you!</Text>
             </Box>
