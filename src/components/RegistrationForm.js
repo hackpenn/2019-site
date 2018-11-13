@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Formik } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
-import { Field, LargeButton, Box, Text } from '@hackclub/design-system'
+import { Field, LargeButton, Box, Text, Heading } from '@hackclub/design-system'
 import { theme } from 'theme'
 
 const FormField = styled(Field).attrs({
@@ -85,10 +85,15 @@ export default class RegistrationForm extends React.Component {
       >
         {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
+            <Box my={3}>
+              <Heading.h3>Attendee Information</Heading.h3>
+              <Text>We can’t wait to meet you!</Text>
+            </Box>
             <FormField
               type="text"
               name="first_name"
               label="First Name"
+              placeholder="Colin"
               error={errors.first_name}
               value={values.first_name}
               onChange={handleChange}
@@ -97,6 +102,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="last_name"
               label="Last Name"
+              placeholder="Chalkboard"
               error={errors.last_name}
               value={values.last_name}
               onChange={handleChange}
@@ -105,6 +111,7 @@ export default class RegistrationForm extends React.Component {
               type="email"
               name="email"
               label="Email"
+              placeholder="colin@chalkboard.com"
               error={errors.email}
               value={values.email}
               onChange={handleChange}
@@ -112,7 +119,8 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="tel"
               name="phone_number"
-              label="Phone Number"
+              label="Phone number"
+              placeholder="814-555-5555"
               error={errors.phone_number}
               value={values.phone_number}
               onChange={handleChange}
@@ -154,7 +162,7 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="select"
               name="shirt_size"
-              label="Shirt Size"
+              label="Shirt size"
               error={errors.shirt_size}
               value={values.shirt_size}
               onChange={handleChange}
@@ -170,7 +178,7 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="text"
               name="dietary_restrictions"
-              label="Dietary Restrictions"
+              label="Dietary restrictions"
               placeholder="(optional)"
               error={errors.dietary_restrictions}
               value={values.dietary_restrictions}
@@ -179,7 +187,7 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="select"
               name="reimbursable"
-              label="Interested in possible travel reimbursement?"
+              label="Interested in travel reimbursement?"
               error={errors.reimbursable}
               value={values.reimbursable}
               onChange={handleChange}
@@ -190,10 +198,17 @@ export default class RegistrationForm extends React.Component {
               <option value="false">No</option>
               <option value="true">Yes (we’ll contact you later)</option>
             </FormField>
+            <Box my={3}>
+              <Heading.h3>Emergency Contact Information</Heading.h3>
+              <Text>
+                In case of emergency, we need to be able to reach your
+                parent/guardian/etc.
+              </Text>
+            </Box>
             <FormField
               type="text"
               name="emergency_email"
-              label="Emergency Contact Email"
+              label="Email"
               placeholder="(parent, guardian, etc.)"
               error={errors.emergency_email}
               value={values.emergency_email}
@@ -202,7 +217,7 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="tel"
               name="emergency_phone"
-              label="Emergency Contact Phone"
+              label="Phone number"
               placeholder="(parent, guardian, etc.)"
               error={errors.emergency_phone}
               value={values.emergency_phone}
