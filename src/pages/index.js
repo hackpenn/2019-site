@@ -121,7 +121,6 @@ export default () => (
     <Box.header
       bg={theme.colors.primaryDark}
       color={theme.colors.white}
-      px={2}
       pt={[4, 5]}
       pb={[3, 5, 6]}
     >
