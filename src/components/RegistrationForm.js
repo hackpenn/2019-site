@@ -45,23 +45,23 @@ export default class RegistrationForm extends React.Component {
           emergency_phone: ''
         }}
         validationSchema={yup.object().shape({
-          first_name: yup.string().required(),
-          last_name: yup.string().required(),
+          first_name: yup.string().required('required'),
+          last_name: yup.string().required('required'),
           email: yup
             .string()
-            .required()
-            .email(),
-          phone_number: yup.string().required(),
-          gender: yup.string().required(),
-          grade: yup.string().required(),
-          shirt_size: yup.string().required(),
+            .required('required')
+            .email('must be a valid email'),
+          phone_number: yup.string().required('required'),
+          gender: yup.string().required('required'),
+          grade: yup.string().required('required'),
+          shirt_size: yup.string().required('required'),
           dietary_restrictions: yup.string(),
-          reimbursable: yup.string().required(),
+          reimbursable: yup.string().required('required'),
           emergency_email: yup
             .string()
-            .required()
-            .email(),
-          emergency_phone: yup.string().required()
+            .required('required')
+            .email('must be a valid email'),
+          emergency_phone: yup.string().required('required')
         })}
         onSubmit={(attendee, { setSubmitting }) => {
           setSubmitting(true)
