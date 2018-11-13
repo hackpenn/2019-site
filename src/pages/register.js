@@ -64,6 +64,7 @@ export default () => (
           </Container>
         </Sheet>
         <Sheet
+          bg={theme.colors.smoke}
           p={[3, 4]}
           mt={[4, 5]}
           align="center"
