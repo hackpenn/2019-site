@@ -81,19 +81,6 @@ export default class RegistrationForm extends React.Component {
                 this.setState({ submitted: true })
               }
             })
-          /*fetch(
-            'https://h-and-m.herokuapp.com/api/v1/events/hack-pennsylvania/attendees',
-            {
-              method: 'POST',
-              body: JSON.stringify({ attendee }),
-              headers: { 'Content-Type': 'application/json' }
-            }
-          ).then(res => {
-            setSubmitting(false)
-            if (res.status === 200) {
-              this.setState({ submitted: true })
-            }
-          })*/
         }}
       >
         {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
