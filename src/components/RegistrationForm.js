@@ -63,6 +63,7 @@ export default class RegistrationForm extends React.Component {
             .email('must be a valid email'),
           emergency_phone: yup.string().required('required')
         })}
+        validateOnChange={false}
         onSubmit={(attendee, { setSubmitting }) => {
           setSubmitting(true)
           axios
