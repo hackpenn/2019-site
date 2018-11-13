@@ -171,6 +171,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="dietary_restrictions"
               label="Dietary Restrictions"
+              placeholder="(optional)"
               error={errors.dietary_restrictions}
               value={values.dietary_restrictions}
               onChange={handleChange}
@@ -178,7 +179,7 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="select"
               name="reimbursable"
-              label="Interested in travel reimbursement?"
+              label="Interested in possible travel reimbursement?"
               error={errors.reimbursable}
               value={values.reimbursable}
               onChange={handleChange}
@@ -187,12 +188,13 @@ export default class RegistrationForm extends React.Component {
                 Select one
               </option>
               <option value="false">No</option>
-              <option value="true">Yes</option>
+              <option value="true">Yes (we’ll contact you later)</option>
             </FormField>
             <FormField
               type="text"
               name="emergency_email"
               label="Emergency Contact Email"
+              placeholder="(parent, guardian, etc.)"
               error={errors.emergency_email}
               value={values.emergency_email}
               onChange={handleChange}
@@ -201,6 +203,7 @@ export default class RegistrationForm extends React.Component {
               type="tel"
               name="emergency_phone"
               label="Emergency Contact Phone"
+              placeholder="(parent, guardian, etc.)"
               error={errors.emergency_phone}
               value={values.emergency_phone}
               onChange={handleChange}
