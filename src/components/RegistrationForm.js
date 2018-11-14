@@ -75,9 +75,7 @@ export default class RegistrationForm extends React.Component {
             )
             .then(res => {
               setSubmitting(false)
-              console.log('a')
               if (res.status === 200) {
-                console.log('aaaaaa')
                 this.setState({ submitted: true })
               }
             })
