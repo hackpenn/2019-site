@@ -31,6 +31,7 @@
     "gatsby-plugin-sitemap": "^2.0.1",
     "gatsby-plugin-styled-components": "^3.0.0",
     "jimp": "^0.5.4",
+    "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
     "palx": "^1.0.3",
     "prop-types": "^15.6.2",
