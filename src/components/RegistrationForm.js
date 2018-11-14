@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Formik } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
+import jsCookie from 'js-cookie'
 import { Field, LargeButton, Box, Text, Heading } from '@hackclub/design-system'
 import { theme } from 'theme'
 
@@ -19,6 +20,7 @@ export default class RegistrationForm extends React.Component {
 
   render() {
     const { submitted } = this.state
+    const signedUp = jsCookie.get('signedUp')
 
     return submitted ? (
       <Box align="center">
@@ -27,6 +29,28 @@ export default class RegistrationForm extends React.Component {
           <span role="img" aria-label="Celebration emoji">
             🎉
           </span>
+        </Text>
+      </Box>
+    ) : signedUp ? (
+      <Box align="center">
+        <Text fontSize={4}>
+          You’ve already signed up!{' '}
+          <span role="img" aria-label="Celebration emoji">
+            🎉
+          </span>
+        </Text>
+        <Text fontSize={2}>
+          If this is an error,{' '}
+          <a
+            onClick={e => {
+              e.preventDefault()
+              jsCookie.remove('signedUp')
+              this.forceUpdate()
+            }}
+            href="#"
+            children="click here"
+          />
+          .
         </Text>
       </Box>
     ) : (
@@ -75,10 +99,9 @@ export default class RegistrationForm extends React.Component {
             )
             .then(res => {
               setSubmitting(false)
-              console.log('a')
               if (res.status === 200) {
-                console.log('aaaaaa')
                 this.setState({ submitted: true })
+                jsCookie.set('signedUp', 'true')
               }
             })
         }}
