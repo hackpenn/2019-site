@@ -60,7 +60,7 @@ export default class RegistrationForm extends React.Component {
           last_name: '',
           email: '',
           phone_number: '',
-          gender: '',
+          pronouns: '',
           grade: '',
           shirt_size: '',
           dietary_restrictions: '',
@@ -76,7 +76,7 @@ export default class RegistrationForm extends React.Component {
             .required('required')
             .email('must be a valid email'),
           phone_number: yup.string().required('required'),
-          gender: yup.string().required('required'),
+          pronouns: yup.string().required('required'),
           grade: yup.string().required('required'),
           shirt_size: yup.string().required('required'),
           dietary_restrictions: yup.string(),
@@ -149,22 +149,19 @@ export default class RegistrationForm extends React.Component {
               onChange={handleChange}
             />
             <FormField
-              type="select"
-              name="gender"
-              label="Gender"
-              error={errors.gender}
-              value={values.gender}
+              type="text"
+              name="pronouns"
+              label="Pronouns"
+              error={errors.pronouns}
+              value={values.pronouns}
               onChange={handleChange}
-            >
-              <option value="" default>
-                Select one
-              </option>
-              <option value="Female">Female</option>
-              <option value="Male">Male</option>
-              <option value="Non-binary">Non-binary</option>
-              <option value="Prefer not to answer">Prefer not to answer</option>
-              <option value="Other">Other</option>
-            </FormField>
+            />
+            <Text fontSize={1} mb={1}>
+              More info:{' '}
+              <a href="https://pronoun.is/" target="_blank">
+                https://pronoun.is
+              </a>
+            </Text>
             <FormField
               type="select"
               name="grade"
