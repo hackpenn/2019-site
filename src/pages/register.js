@@ -42,27 +42,23 @@ const ShareButton = ({ children, ...props }) => (
 export default () => (
   <Layout>
     <Nav />
-    <Box
-      bg={theme.colors.primaryDark}
-      color={theme.colors.white}
-      px={2}
-      pt={[4, 5]}
-      pb={[4, 5, 6]}
-    >
-      <Container width={1} px={3}>
-        <Headline>Register</Headline>
+    <Box px={2} pt={[4, 5]} pb={[4, 5, 6]}>
+      <Container maxWidth={48} width={1} px={3}>
+        <Headline color={theme.colors.primaryDark}>Register</Headline>
         <Heading.h2
           fontSize={[3, 4, 5]}
+          color={theme.colors.slate}
           style={{ fontFamily: theme.mono }}
           mt={3}
+          mb={4}
         >
-          The event is totally free, lots of food, drinks, and prizes included.
+          The event is totally free—lots of food, drinks, and prizes included.
         </Heading.h2>
-        <Sheet mt={4}>
-          <Container maxWidth={32}>
-            <RegistrationForm />
-          </Container>
-        </Sheet>
+        {/* <Sheet mt={4}> */}
+        {/* <Container maxWidth={32} mt={4}> */}
+        <RegistrationForm />
+        {/* </Container> */}
+        {/* </Sheet> */}
         <Sheet
           p={[3, 4]}
           mt={[4, 5]}
