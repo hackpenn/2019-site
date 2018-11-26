@@ -231,7 +231,8 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="text"
               name="emergency_email"
-              label="Email"
+              label="Emergency contact email"
+              placeholder="grace@hackpenn.com"
               error={errors.emergency_email}
               value={values.emergency_email}
               onChange={handleChange}
@@ -239,7 +240,8 @@ export default class RegistrationForm extends React.Component {
             <FormField
               type="tel"
               name="emergency_phone"
-              label="Phone number"
+              label="Emergency contact phone number"
+              placeholder="814-555-5555"
               error={errors.emergency_phone}
               value={values.emergency_phone}
               onChange={handleChange}
