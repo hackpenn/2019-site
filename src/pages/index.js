@@ -136,6 +136,9 @@ export default () => (
         >
           Pennsylvania’s premiere high&nbsp;school hackathon is back.
         </Heading.h1>
+        <Heading.h3 fontSize={[3, 4]} style={{ fontFamily: theme.mono }} mt={3}>
+          January 19-20, 2019 in State&nbsp;College, PA.
+        </Heading.h3>
         <Flex align="center" wrap mt={4}>
           <Action
             to="/register"
