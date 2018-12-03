@@ -226,7 +226,7 @@ export default () => (
           />
           <Question
             name="How do I get there?"
-            body="We'll be sending buses out to Pittsburgh & Philadelphia, so if you're located in PA, it's super easy to get here. As for out-of-state, we're currently looking into whether we can do travel reimbursements-- stay tuned."
+            body="We’ll send buses to Pittsburgh & Philadelphia, so if you’re in PA, it’s super easy to come. For out-of-state, we’relooking into offering travel reimbursements—stay tuned."
           />
         </Questions>
       </Container>
