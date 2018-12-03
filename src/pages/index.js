@@ -224,6 +224,10 @@ export default () => (
             name="What should I bring?"
             body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiletries, and a sleeping bag (if you’ll sleep)."
           />
+          <Question
+            name="How do I get there?"
+            body="We'll be sending buses out to Pittsburgh & Philadelphia, so if you're located in PA, it's super easy to get here. As for out-of-state, we're currently looking into whether we can do travel reimbursements-- stay tuned."
+          />
         </Questions>
       </Container>
     </Box.section>
