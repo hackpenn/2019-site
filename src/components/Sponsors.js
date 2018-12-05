@@ -15,7 +15,7 @@ const Base = styled(Container)`
 `
 
 const Sponsors = props => (
-  <Base maxWidth={48} {...props}>
+  <Base {...props}>
     {data.sponsors.map(sponsor => (
       <a href={`${sponsor.link}`}>
         <img

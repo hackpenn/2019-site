@@ -40,5 +40,11 @@
     { "name": "Matthew Stanciu", "pronouns": "he/him" },
     { "name": "Zane Davis-Barrs", "pronouns": "he/him" }
   ],
-  "sponsors": []
+  "sponsors": [
+    {
+      "name": "Hack Club Bank",
+      "link": "hackclub-bank",
+      "image": "hackclub-bank.svg"
+    }
+  ]
 }

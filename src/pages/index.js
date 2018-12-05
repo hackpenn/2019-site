@@ -235,7 +235,7 @@ export default () => (
       <Container width={1} px={3} pt={3} pb={[4, 5, 6]}>
         <Bannerline />
         <Headline>Sponsors</Headline>
-        <Text fontSize={3} color={theme.colors.slate}>
+        <Text fontSize={3} color={theme.colors.slate} mb={4}>
           Want to sponsor Hack Pennsylvania?{' '}
           <A
             href="mailto:team@hackpenn.com"
@@ -247,7 +247,7 @@ export default () => (
             Let’s chat
           </A>
         </Text>
-        {/* <Sponsors /> */}
+        <Sponsors />
       </Container>
     </Box.section>
     <Leadership />
