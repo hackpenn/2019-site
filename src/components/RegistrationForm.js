@@ -75,8 +75,7 @@ export default class RegistrationForm extends React.Component {
             .string()
             .required('required')
             .email('must be a valid email'),
-          phone_number: yup.string().required('required'),
-          gender: yup.string().required('required'),
+          phone_number: yup.string(),
           pronouns: yup.string().required('required'),
           grade: yup.string().required('required'),
           shirt_size: yup.string().required('required'),
