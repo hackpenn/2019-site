@@ -60,7 +60,7 @@ export default class RegistrationForm extends React.Component {
           last_name: '',
           email: '',
           phone_number: '',
-          gender: '',
+          pronouns: '',
           grade: '',
           shirt_size: '',
           dietary_restrictions: '',
@@ -77,6 +77,7 @@ export default class RegistrationForm extends React.Component {
             .email('must be a valid email'),
           phone_number: yup.string().required('required'),
           gender: yup.string().required('required'),
+          pronouns: yup.string().required('required'),
           grade: yup.string().required('required'),
           shirt_size: yup.string().required('required'),
           dietary_restrictions: yup.string(),
@@ -150,18 +151,18 @@ export default class RegistrationForm extends React.Component {
             />
             <FormField
               type="select"
-              name="gender"
-              label="Gender"
-              error={errors.gender}
-              value={values.gender}
+              name="pronouns"
+              label="Pronouns"
+              error={errors.pronouns}
+              value={values.pronouns}
               onChange={handleChange}
             >
               <option value="" default>
                 Select one
               </option>
-              <option value="Female">Female</option>
-              <option value="Male">Male</option>
-              <option value="Non-binary">Non-binary</option>
+              <option value="She/her">She/her</option>
+              <option value="He/him">He/him</option>
+              <option value="They/them">They/them</option>
               <option value="Prefer not to answer">Prefer not to answer</option>
               <option value="Other">Other</option>
             </FormField>
