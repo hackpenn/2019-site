@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import theme from 'theme/config'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 const Flag = styled(Link).attrs({
   to: '/',
