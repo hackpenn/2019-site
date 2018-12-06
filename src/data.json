@@ -32,6 +32,22 @@
       }
     ]
   },
+  "event": {
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "name": "Hack Pennsylvania",
+    "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2018.",
+    "url": "https://hackpenn.com",
+    "image": "https://hackpenn.com/flag.png",
+    "sponsor": {
+      "@type": "Organization",
+      "name": "Hack Club",
+      "url": "https://hackclub.com"
+    },
+    "startDate": "2019-01-19T12:00",
+    "endDate": "2019-01-19T12:00",
+    "isAccessibleForFree": true
+  },
   "leaders": [
     { "name": "Lachlan Campbell", "pronouns": "they/them" },
     { "name": "Joy Liu", "pronouns": "she/her" },

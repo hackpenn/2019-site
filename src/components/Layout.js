@@ -3,9 +3,9 @@ import Helmet from 'react-helmet'
 import data from 'data'
 import ThemeProvider from 'theme'
 import { theme } from 'theme'
-import fonts from '../../static/fonts.css'
+import '../../static/fonts.css'
 
-const { name, title, description, img, url, org } = data
+const { name, title, description, img, url, org, event } = data
 
 const meta = tags =>
   tags.map((props, index) =>
@@ -37,6 +37,7 @@ export default ({ children }) => (
         { property: 'og:url', content: url }
       ])}
       <script type="application/ld+json" children={JSON.stringify(org)} />
+      <script type="application/ld+json" children={JSON.stringify(event)} />
     </Helmet>
     {children}
   </ThemeProvider>
