@@ -28,34 +28,8 @@ module.exports = {
         display: 'minimal-ui'
       }
     },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './static/favicon.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    },
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: 'UA-127205588-1',
-    //     head: true
-    //   }
-    // },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-lodash',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify',
     'gatsby-plugin-no-sourcemaps'
