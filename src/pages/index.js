@@ -189,7 +189,7 @@ export default () => (
     </Box.section>
     <Box.section bg={theme.colors.primary} color={theme.colors.black} width={1}>
       <Container py={[4, 5]} px={3}>
-        <Bannerline mt={[3, 4]} />
+        <Bannerline mt={[3, 4]} bg={theme.colors.white} />
         <Headline color="white">FAQ</Headline>
         <Questions>
           <Question
