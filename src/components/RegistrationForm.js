@@ -165,6 +165,22 @@ export default class RegistrationForm extends React.Component {
               <option value="Prefer not to answer">Prefer not to answer</option>
               <option value="Other">Other</option>
             </FormField>
+            <Text
+              fontSize={1}
+              mb={2}
+              style={{
+                fontFamily: 'inherit'
+              }}
+            >
+              More info:{' '}
+              <a
+                href="https://pronoun.is/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://pronoun.is
+              </a>
+            </Text>
             <FormField
               type="select"
               name="grade"

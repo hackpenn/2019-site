@@ -13,6 +13,7 @@ import {
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
+import Bannerline from 'components/Bannerline'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
@@ -54,16 +55,6 @@ const Modules = styled(Container).attrs({
     // }
   }
 `
-
-const Bannerline = props => (
-  <Box
-    bg={theme.colors.accent}
-    mt={[4, 5, 6]}
-    mb={4}
-    style={{ height: 4, width: '8rem' }}
-    {...props}
-  />
-)
 
 const Questions = styled(Container).attrs({ maxWidth: 72, mt: [3, 4] })`
   display: grid;
@@ -198,6 +189,7 @@ export default () => (
     </Box.section>
     <Box.section bg={theme.colors.primary} color={theme.colors.black} width={1}>
       <Container py={[4, 5]} px={3}>
+        <Bannerline mt={[3, 4]} />
         <Headline color="white">FAQ</Headline>
         <Questions>
           <Question
