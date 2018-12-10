@@ -174,11 +174,11 @@ export default class RegistrationForm extends React.Component {
             >
               More info:{' '}
               <a
-                href="https://pronoun.is/"
+                href="https://en.wikipedia.org/wiki/Personal_pronoun"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://pronoun.is
+                Wikipedia
               </a>
             </Text>
             <FormField
