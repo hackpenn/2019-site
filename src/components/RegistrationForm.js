@@ -12,6 +12,12 @@ const FormField = styled(Field).attrs({
 })`
   border: 1px solid ${theme.colors.gray[3]};
 `
+const Explanation = styled(Text).attrs({
+  fontSize: 1,
+  mb: 2
+})`
+  font-family: inherit;
+`
 
 export default class RegistrationForm extends React.Component {
   state = {
@@ -64,7 +70,7 @@ export default class RegistrationForm extends React.Component {
           grade: '',
           shirt_size: '',
           dietary_restrictions: '',
-          reimbursable: '',
+          travel: '',
           emergency_email: '',
           emergency_phone: ''
         }}
@@ -80,7 +86,7 @@ export default class RegistrationForm extends React.Component {
           grade: yup.string().required('required'),
           shirt_size: yup.string().required('required'),
           dietary_restrictions: yup.string(),
-          reimbursable: yup.string().required('required'),
+          travel: yup.string().required('required'),
           emergency_email: yup
             .string()
             .required('required')
@@ -165,13 +171,7 @@ export default class RegistrationForm extends React.Component {
               <option value="Prefer not to answer">Prefer not to answer</option>
               <option value="Other">Other</option>
             </FormField>
-            <Text
-              fontSize={1}
-              mb={2}
-              style={{
-                fontFamily: 'inherit'
-              }}
-            >
+            <Explanation>
               More info:{' '}
               <a
                 href="https://en.wikipedia.org/wiki/Personal_pronoun"
@@ -180,7 +180,7 @@ export default class RegistrationForm extends React.Component {
               >
                 Wikipedia
               </a>
-            </Text>
+            </Explanation>
             <FormField
               type="select"
               name="grade"
@@ -225,18 +225,34 @@ export default class RegistrationForm extends React.Component {
             />
             <FormField
               type="select"
-              name="reimbursable"
-              label="Interested in travel reimbursement?"
-              error={errors.reimbursable}
-              value={values.reimbursable}
+              name="travel"
+              label="Travel method"
+              error={errors.travel}
+              value={values.travel}
               onChange={handleChange}
             >
               <option value="" default>
                 Select one
               </option>
-              <option value="false">No</option>
-              <option value="true">Yes (we’ll contact you later)</option>
+              <option value="Attendee handles it">
+                Handling my own travel
+              </option>
+              <option value="Interested in travel reimbursement">
+                Interested in travel reimbursement
+              </option>
+              <option value="Interested in PHL bus">
+                Would be interested in a bus from Philly
+              </option>
+              <option value="Interested in PIT bus">
+                Would be interested in a bus from Pittsburgh
+              </option>
             </FormField>
+            <Explanation>
+              For more information on the buses we’re sending, see our{' '}
+              <a href="/#FAQ-travel" children="FAQs" />. If you select travel
+              reimbursement (and you’re not from those areas), we’ll contact you
+              later if money is available.
+            </Explanation>
             <Box my={3}>
               <Heading.h3>Emergency Contact Information</Heading.h3>
               <Text>
