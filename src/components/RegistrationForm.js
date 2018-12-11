@@ -241,10 +241,10 @@ export default class RegistrationForm extends React.Component {
                 Interested in travel reimbursement
               </option>
               <option value="Interested in PHL bus">
-                Would be interested in a bus from Philly
+                Interested in a bus from Philly
               </option>
               <option value="Interested in PIT bus">
-                Would be interested in a bus from Pittsburgh
+                Interested in a bus from Pittsburgh
               </option>
             </FormField>
             <Explanation>
