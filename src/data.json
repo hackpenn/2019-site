@@ -39,6 +39,15 @@
     "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2018.",
     "url": "https://hackpenn.com",
     "image": "https://hackpenn.com/flag.png",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "State College",
+        "addressRegion": "PA"
+      },
+      "url": "wells-fargo-center.html"
+    },
     "sponsor": {
       "@type": "Organization",
       "name": "Hack Club",
