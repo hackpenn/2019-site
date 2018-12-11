@@ -187,7 +187,12 @@ export default () => (
         </Modules>
       </Container>
     </Box.section>
-    <Box.section bg={theme.colors.primary} color={theme.colors.black} width={1}>
+    <Box.section
+      bg={theme.colors.primary}
+      color={theme.colors.black}
+      width={1}
+      id="FAQ"
+    >
       <Container py={[4, 5]} px={3}>
         <Bannerline mt={[3, 4]} bg={theme.colors.white} />
         <Headline color="white">FAQ</Headline>
@@ -217,8 +222,9 @@ export default () => (
             body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiletries, and a sleeping bag (if you’ll sleep)."
           />
           <Question
+            id="FAQ-travel"
             name="How do I get there?"
-            body="We’ll send buses to Pittsburgh & Philadelphia, so if you’re in PA, it’s super easy to come. For out-of-state, we’re currently looking into offering travel reimbursements—stay tuned."
+            body="We’ll send buses to Pittsburgh & Philadelphia on the morning of Jan 19, so if you’re in PA, it’s super easy to come. For out-of-state, we’re currently looking into offering travel reimbursements—stay tuned."
           />
         </Questions>
       </Container>
