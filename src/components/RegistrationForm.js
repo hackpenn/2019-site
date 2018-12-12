@@ -72,7 +72,8 @@ export default class RegistrationForm extends React.Component {
           dietary_restrictions: '',
           travel: '',
           emergency_email: '',
-          emergency_phone: ''
+          emergency_phone: '',
+          note: ''
         }}
         validationSchema={yup.object().shape({
           first_name: yup.string().required('required'),
@@ -91,7 +92,8 @@ export default class RegistrationForm extends React.Component {
             .string()
             .required('required')
             .email('must be a valid email'),
-          emergency_phone: yup.string().required('required')
+          emergency_phone: yup.string().required('required'),
+          note: yup.string()
         })}
         validateOnChange={false}
         onSubmit={(attendee, { setSubmitting }) => {
@@ -276,6 +278,19 @@ export default class RegistrationForm extends React.Component {
               placeholder="814-555-5555"
               error={errors.emergency_phone}
               value={values.emergency_phone}
+              onChange={handleChange}
+            />
+            <Box my={2}>
+              <Heading.h3>Additional Details</Heading.h3>
+              <Text>Questions are optional.</Text>
+            </Box>
+            <FormField
+              type="textarea"
+              name="note"
+              label="Questions, comments, etc"
+              placeholder="Tell us your thoughts…"
+              error={errors.emergency_email}
+              value={values.emergency_email}
               onChange={handleChange}
             />
             <LargeButton
