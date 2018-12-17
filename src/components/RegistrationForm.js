@@ -285,7 +285,7 @@ export default class RegistrationForm extends React.Component {
               type="textarea"
               name="note"
               label="Questions, comments, etc"
-              placeholder="Tell us your thoughts…"
+              placeholder="Tell us your thoughts… (optional)"
               error={errors.emergency_email}
               value={values.emergency_email}
               onChange={handleChange}
