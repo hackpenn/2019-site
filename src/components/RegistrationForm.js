@@ -299,8 +299,8 @@ export default class RegistrationForm extends React.Component {
               name="note"
               label="Questions, comments, etc"
               placeholder="Tell us your thoughts… (optional)"
-              error={errors.emergency_email}
-              value={values.emergency_email}
+              error={errors.note}
+              value={values.note}
               onChange={handleChange}
             />
             <LargeButton
