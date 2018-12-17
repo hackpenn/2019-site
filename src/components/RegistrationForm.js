@@ -280,10 +280,7 @@ export default class RegistrationForm extends React.Component {
               value={values.emergency_phone}
               onChange={handleChange}
             />
-            <Box my={2}>
-              <Heading.h3>Additional Details</Heading.h3>
-              <Text>Questions are optional.</Text>
-            </Box>
+            <Heading.h3 my={3}>Additional Details</Heading.h3>
             <FormField
               type="textarea"
               name="note"
