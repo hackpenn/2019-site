@@ -67,6 +67,7 @@ export default class RegistrationForm extends React.Component {
           email: '',
           phone_number: '',
           pronouns: '',
+          school: '',
           grade: '',
           shirt_size: '',
           dietary_restrictions: '',
@@ -84,6 +85,7 @@ export default class RegistrationForm extends React.Component {
             .email('must be a valid email'),
           phone_number: yup.string(),
           pronouns: yup.string().required('required'),
+          school: yup.string().required('required'),
           grade: yup.string().required('required'),
           shirt_size: yup.string().required('required'),
           dietary_restrictions: yup.string(),
@@ -184,6 +186,15 @@ export default class RegistrationForm extends React.Component {
               </a>
             </Explanation>
             <FormField
+              type="text"
+              name="school"
+              label="School"
+              placeholder="Hacking High School"
+              error={errors.school}
+              value={values.school}
+              onChange={handleChange}
+            />
+            <FormField
               type="select"
               name="grade"
               label="Grade"
@@ -280,7 +291,9 @@ export default class RegistrationForm extends React.Component {
               value={values.emergency_phone}
               onChange={handleChange}
             />
-            <Heading.h3 mt={3} mb={2}>Additional Details</Heading.h3>
+            <Heading.h3 mt={3} mb={2}>
+              Additional Details
+            </Heading.h3>
             <FormField
               type="textarea"
               name="note"
