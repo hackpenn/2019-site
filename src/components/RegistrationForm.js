@@ -174,7 +174,7 @@ export default class RegistrationForm extends React.Component {
               <option value="Other">Other</option>
             </FormField>
             <Explanation>
-              More info:{' '}
+              Will be displayed on your badge. More info:{' '}
               <a
                 href="https://en.wikipedia.org/wiki/Personal_pronoun"
                 target="_blank"
@@ -280,7 +280,7 @@ export default class RegistrationForm extends React.Component {
               value={values.emergency_phone}
               onChange={handleChange}
             />
-            <Heading.h3 my={3}>Additional Details</Heading.h3>
+            <Heading.h3 mt={3} mb={2}>Additional Details</Heading.h3>
             <FormField
               type="textarea"
               name="note"
