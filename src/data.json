@@ -1,7 +1,7 @@
 {
   "name": "Hack Pennsylvania",
   "title": "Hack Pennsylvania – PA’s premiere high school hackathon",
-  "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2018.",
+  "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2019.",
   "url": "https://hackpenn.com",
   "twitter": "@hackpenn",
   "img": "https://hackpenn.com/card.png",
@@ -10,7 +10,7 @@
     "instagram": "https://www.instagram.com/hackpenn",
     "facebook": "https://fb.me/hackpennsylvania",
     "messenger": "https://m.me/hackpennsylvania",
-    "email": "mailto:team@hackpenn.com"
+    "email": "mailto:lachlan@hackpenn.com"
   },
   "org": {
     "@context": "https://schema.org",
@@ -36,7 +36,7 @@
     "@context": "http://schema.org/",
     "@type": "Event",
     "name": "Hack Pennsylvania",
-    "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2018.",
+    "description": "Register today for 24 hours of coding, fun, free food, and prizes. Hack Pennsylvania comes to State College, PA on January 19, 2019.",
     "url": "https://hackpenn.com",
     "image": "https://hackpenn.com/flag.png",
     "location": {
@@ -45,8 +45,7 @@
         "@type": "PostalAddress",
         "addressLocality": "State College",
         "addressRegion": "PA"
-      },
-      "url": "wells-fargo-center.html"
+      }
     },
     "sponsor": {
       "@type": "Organization",
