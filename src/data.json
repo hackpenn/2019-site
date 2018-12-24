@@ -69,6 +69,16 @@
       "name": "Hack Club Bank",
       "link": "https://hackclub.com/bank",
       "image": "hackclub-bank.svg"
+    },
+    {
+      "name": "Mike’s TV & Appliance",
+      "link": "http://www.mikesvideo.com/",
+      "image": "mikes.png"
+    },
+    {
+      "name": "ZEIT",
+      "link": "https://zeit.co",
+      "image": "zeit.svg"
     }
   ]
 }
