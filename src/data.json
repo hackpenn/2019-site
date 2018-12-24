@@ -66,9 +66,9 @@
   ],
   "sponsors": [
     {
-      "name": "Hack Club Bank",
-      "link": "https://hackclub.com/bank",
-      "image": "hackclub-bank.svg"
+      "name": "ZEIT",
+      "link": "https://zeit.co",
+      "image": "zeit.svg"
     },
     {
       "name": "Mike’s TV & Appliance",
@@ -76,9 +76,9 @@
       "image": "mikes.png"
     },
     {
-      "name": "ZEIT",
-      "link": "https://zeit.co",
-      "image": "zeit.svg"
+      "name": "Hack Club Bank",
+      "link": "https://hackclub.com/bank",
+      "image": "hackclub-bank.svg"
     }
   ]
 }

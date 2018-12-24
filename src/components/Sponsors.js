@@ -5,7 +5,7 @@ import data from 'data'
 
 const Base = styled(Container)`
   display: grid;
-  grid-gap: ${props => props.theme.space[3]}px;
+  grid-gap: ${props => props.theme.space[2]}px;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   align-items: center;
   justify-content: center;
