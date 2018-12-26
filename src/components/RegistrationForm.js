@@ -100,6 +100,7 @@ export default class RegistrationForm extends React.Component {
             .email(INVALID_EMAIL_STRING),
           emergency_phone: yup.string().required(REQUIRED_STRING),
           note: yup.string(),
+          referrer: yup.string().required(REQUIRED_STRING)
         })}
         validateOnChange={false}
         onSubmit={(attendee, { setSubmitting }) => {
@@ -307,6 +308,23 @@ export default class RegistrationForm extends React.Component {
               value={values.note}
               onChange={handleChange}
             />
+            <FormField
+              type="select"
+              name="referrer"
+              label="How did you hear about us?"
+              error={errors.referrer}
+              value={values.referrer}
+              onChange={handleChange}
+            >
+              <option value="" default>
+                Select one
+              </option>
+              <option value="Teacher">Teacher</option>
+              <option value="Principal">Principal</option>
+              <option value="Social media">Social media</option>
+              <option value="Instagram ad">Instagram ad</option>
+              <option value="Other">Other</option>
+            </FormField>
             <LargeButton
               mt={3}
               type="submit"
