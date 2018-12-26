@@ -7,6 +7,9 @@ import jsCookie from 'js-cookie'
 import { Field, LargeButton, Box, Text, Heading } from '@hackclub/design-system'
 import { theme } from 'theme'
 
+const REQUIRED_STRING = 'required'
+const INVALID_EMAIL_STRING = 'must be a valid email'
+
 const FormField = styled(Field).attrs({
   bg: theme.colors.white
 })`
@@ -74,28 +77,29 @@ export default class RegistrationForm extends React.Component {
           travel: '',
           emergency_email: '',
           emergency_phone: '',
-          note: ''
+          note: '',
+          referrer: ''
         }}
         validationSchema={yup.object().shape({
-          first_name: yup.string().required('required'),
-          last_name: yup.string().required('required'),
+          first_name: yup.string().required(REQUIRED_STRING),
+          last_name: yup.string().required(REQUIRED_STRING),
           email: yup
             .string()
-            .required('required')
-            .email('must be a valid email'),
+            .required(REQUIRED_STRING)
+            .email(INVALID_EMAIL_STRING),
           phone_number: yup.string(),
-          pronouns: yup.string().required('required'),
-          school: yup.string().required('required'),
-          grade: yup.string().required('required'),
-          shirt_size: yup.string().required('required'),
+          pronouns: yup.string().required(REQUIRED_STRING),
+          school: yup.string().required(REQUIRED_STRING),
+          grade: yup.string().required(REQUIRED_STRING),
+          shirt_size: yup.string().required(REQUIRED_STRING),
           dietary_restrictions: yup.string(),
-          travel: yup.string().required('required'),
+          travel: yup.string().required(REQUIRED_STRING),
           emergency_email: yup
             .string()
-            .required('required')
-            .email('must be a valid email'),
-          emergency_phone: yup.string().required('required'),
-          note: yup.string()
+            .required(REQUIRED_STRING)
+            .email(INVALID_EMAIL_STRING),
+          emergency_phone: yup.string().required(REQUIRED_STRING),
+          note: yup.string(),
         })}
         validateOnChange={false}
         onSubmit={(attendee, { setSubmitting }) => {
