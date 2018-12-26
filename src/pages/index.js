@@ -8,8 +8,8 @@ import {
   Card,
   Image,
   Text,
-  Link as A,
-  Icon
+  Hide,
+  Link as A
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
@@ -17,6 +17,8 @@ import Bannerline from 'components/Bannerline'
 import Nav from 'components/Nav'
 import Action from 'components/Action'
 import Module from 'components/Module'
+import Grid from 'components/Grid'
+import Photo from 'components/Photo'
 import Sponsors from 'components/Sponsors'
 import Leadership from 'components/Leadership'
 import Apply from 'components/Apply'
@@ -50,11 +52,10 @@ const Modules = styled(Container).attrs({
   ${theme.mediaQueries.md} {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: ${theme.space[4]}px;
-    // > div {
-    // align-items: center;
-    // }
   }
 `
+
+const HiddenPhoto = styled(Hide.withComponent(Photo))``
 
 const Questions = styled(Container).attrs({ maxWidth: 72, mt: [3, 4] })`
   display: grid;
@@ -151,6 +152,39 @@ export default () => (
             body="You’ll be in a friendly, safe environment, with diverse attendees, free of harassment."
           />
         </Modules>
+        <Grid mt={4} color="white">
+          <Box bg="primary" p={[3, 4]}>
+            <Heading.h3 f={[4, 5]} my={0}>
+              Last year.
+            </Heading.h3>
+            <Text f={3} mt={2}>
+              We organized central Pennsylvania’s first high school hackathon.
+              We saw dozens of teens learn to code & hone their skills. With
+              tens of projects presented, it was a major success.
+            </Text>
+          </Box>
+          <HiddenPhoto
+            xs
+            sm
+            aria-label="High school students coding at Hack Happy Valley"
+            src="/hackhv/1.jpg"
+          />
+          <Photo
+            aria-label="Projects being presented at Hack Happy Valley"
+            src="/hackhv/2.jpg"
+          />
+          <Box bg="primaryDark" p={[3, 4]}>
+            <Heading.h3 f={[4, 5]} my={0}>
+              This year.
+            </Heading.h3>
+            <Text f={3} mt={2}>
+              We’re dramatically expanding our reach by sending buses to
+              Pittsburgh & Philadelphia. We encourage both beginners & more
+              experienced coders to come: everyone will learn something, and
+              maybe even win a prize.
+            </Text>
+          </Box>
+        </Grid>
       </Container>
     </Box.section>
     <Box.section
