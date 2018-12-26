@@ -18,7 +18,7 @@ const Service = ({ href, service, ...props }) => (
 
 const Footer = ({ children }) => (
   <Box.footer
-    p={[4, 5]}
+    py={[4, 5]}
     bg={theme.colors.smoke}
     color={theme.colors.slate}
     align="center"
