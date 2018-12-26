@@ -82,30 +82,6 @@ const Question = ({ name, body, ...props }) => (
   </Card>
 )
 
-const Patchline = styled(Container.withComponent(Heading.h2)).attrs({
-  fontSize: [5, 6],
-  color: 'white',
-  py: [4, 5, 6]
-})`
-  font-weight: 500;
-  line-height: 1.75;
-`
-const Patch = styled(Text.span)`
-  font-weight: bold;
-  position: relative;
-  svg {
-    position: absolute;
-    min-height: 128px;
-    width: 100%;
-    fill: ${theme.colors.primaryWash};
-    margin-top: -${theme.space[4]}px;
-    z-index: 0;
-  }
-  span {
-    z-index: 2;
-  }
-`
-
 export default () => (
   <Layout>
     <Nav />
@@ -143,16 +119,6 @@ export default () => (
         </Flex>
       </Container>
     </Box.header>
-    {/* <Box.section bg={theme.colors.primary}>
-      <Patchline>
-        <Patch>
-          <Icon glyph="friend" />
-          <span>200 hackers</span>
-        </Patch>
-        {' come together in '}
-        SCE for 24 hours to work on spectacular projects.
-      </Patchline>
-    </Box.section> */}
     <Box.section bg={theme.colors.snow}>
       <Container
         width={1}
