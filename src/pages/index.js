@@ -206,6 +206,10 @@ export default () => (
             body="Complete beginners are not only welcome, but expected! Learn as you go with our starting workshops and mentors."
           />
           <Question
+            name="What if I already know how to code?"
+            body="All skill levels are welcome! Though we primarily market to beginners, we welcome experts (and everyone in between) too."
+          />
+          <Question
             name="How much does it cost?"
             body="Nothing, it’s totally free! Registration and attendance are 100% free, with meals, drinks, swag, & workshops included."
           />
