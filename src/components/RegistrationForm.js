@@ -313,6 +313,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="referrer"
               label="How did you hear about us?"
+              placeholder="Teacher, principal, etc"
               error={errors.referrer}
               value={values.referrer}
               onChange={handleChange}
