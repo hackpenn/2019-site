@@ -310,22 +310,13 @@ export default class RegistrationForm extends React.Component {
               onChange={handleChange}
             />
             <FormField
-              type="select"
+              type="text"
               name="referrer"
               label="How did you hear about us?"
               error={errors.referrer}
               value={values.referrer}
               onChange={handleChange}
-            >
-              <option value="" default>
-                Select one
-              </option>
-              <option value="Teacher">Teacher</option>
-              <option value="Principal">Principal</option>
-              <option value="Social media">Social media</option>
-              <option value="Instagram ad">Instagram ad</option>
-              <option value="Other">Other</option>
-            </FormField>
+            />
             <LargeButton
               mt={3}
               type="submit"
