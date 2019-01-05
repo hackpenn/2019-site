@@ -8,15 +8,7 @@ import Footer from 'components/Footer'
 import Sheet from 'components/Sheet'
 import RegistrationForm from 'components/RegistrationForm'
 import IconButton from 'components/IconButton'
-
-const Headline = styled(Heading.h2).attrs({
-  color: 'white',
-  fontSize: [6, 7],
-  mb: 2
-})`
-  font-weight: 900;
-  line-height: 1.125;
-`
+import Headline from 'components/Headline'
 
 const url = 'http://hackpenn.com/'
 const twitterURL = (text, u = url) =>

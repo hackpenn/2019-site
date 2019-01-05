@@ -23,15 +23,7 @@ import Sponsors from 'components/Sponsors'
 import Leadership from 'components/Leadership'
 import Apply from 'components/Apply'
 import Footer from 'components/Footer'
-
-const Headline = styled(Heading.h2).attrs({
-  color: 'primaryDark',
-  fontSize: [5, 6],
-  mb: 2
-})`
-  font-weight: 900;
-  line-height: 1.125;
-`
+import Headline from 'components/Headline'
 
 const Lead = styled(Container.withComponent(Text)).attrs({
   fontSize: 4,
