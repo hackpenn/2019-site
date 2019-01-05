@@ -10,7 +10,7 @@ import Headline from 'components/Headline'
 import data from 'data'
 
 const Event = styled(Text).attrs({
-  fontSize: 4
+  fontSize: [3, 4]
 })``
 
 export default () => (
