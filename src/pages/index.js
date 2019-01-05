@@ -122,7 +122,9 @@ export default () => (
       >
         <Container maxWidth={48} mx={0}>
           <Bannerline />
-          <Headline>24 hours of coding, fun, free food, & prizes.</Headline>
+          <Headline color="primaryDark">
+            24 hours of coding, fun, free food, & prizes.
+          </Headline>
           <Lead maxWidth={48}>
             Hack Pennsylvania is a hackathon, a 24-hour coding event. 200
             students from across the state will come for the day. You’ll work
@@ -187,7 +189,7 @@ export default () => (
     >
       <Container py={[4, 5]} px={3}>
         <Bannerline mt={[3, 4]} bg={theme.colors.white} />
-        <Headline color="white">FAQ</Headline>
+        <Headline>FAQ</Headline>
         <Questions>
           <Question
             name="Who can participate?"
@@ -228,7 +230,7 @@ export default () => (
     <Box.section bg={theme.colors.white}>
       <Container width={1} px={3} pt={3} pb={[4, 5, 6]}>
         <Bannerline />
-        <Headline>Sponsors</Headline>
+        <Headline color="primaryDark">Sponsors</Headline>
         <Text fontSize={3} color={theme.colors.slate} mb={4}>
           Want to sponsor Hack Pennsylvania?{' '}
           <A

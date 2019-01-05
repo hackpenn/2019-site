@@ -42,7 +42,7 @@ export default () => (
       pb={[4, 5, 6]}
     >
       <Container width={1} px={3}>
-        <Headline>Register</Headline>
+        <Headline fontSize={[6, 7]}>Register</Headline>
         <Heading.h2
           fontSize={[3, 4, 5]}
           style={{ fontFamily: theme.mono }}
