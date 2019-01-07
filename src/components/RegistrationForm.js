@@ -263,12 +263,6 @@ export default class RegistrationForm extends React.Component {
               <option value="Interested in travel reimbursement">
                 Interested in travel reimbursement
               </option>
-              <option value="Interested in PHL bus">
-                Interested in a bus from Philly
-              </option>
-              <option value="Interested in PIT bus">
-                Interested in a bus from Pittsburgh
-              </option>
             </FormField>
             <Explanation>
               For more information on the buses we’re sending, see our{' '}
