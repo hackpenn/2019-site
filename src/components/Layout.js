@@ -3,7 +3,8 @@ import Helmet from 'react-helmet'
 import data from 'data'
 import ThemeProvider from 'theme'
 import { theme } from 'theme'
-import '../../static/fonts.css'
+import '../../static/inter-ui/fonts.css'
+import '../../static/quattro/fonts.css'
 
 const { name, title, description, img, url, org, event } = data
 
