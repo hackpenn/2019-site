@@ -147,11 +147,11 @@ export default () => (
           <Module
             icon="emoji"
             name="Endless fun"
-            body="It goes way beyond coding. Meet new friends, come to the 2am dancy party, win prizes."
+            body="It goes way beyond coding. Meet new friends, come to the 2am dance party, win prizes."
           />
           <Module
             icon="rep"
-            name="Fab food"
+            name="Fabulous food"
             body="You’ll be served Panera dinner, midnight ice cream, bagel breakfast, & continuous snacks. (alt’s available)"
           />
           <Module
