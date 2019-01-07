@@ -23,11 +23,11 @@ const Inner = styled(Container.withComponent(Flex)).attrs({
 })``
 
 export const Item = styled(A.withComponent(Link)).attrs({
+  color: 'white',
   fontSize: [2, 3],
   my: 1,
   mx: [2, 3]
 })`
-  color: inherit;
   opacity: 0.875;
   text-transform: uppercase;
   position: relative;
