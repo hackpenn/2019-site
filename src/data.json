@@ -81,6 +81,11 @@
       "image": "ips.png"
     },
     {
+      "name": "Linode",
+      "link": "https://linode.com",
+      "image": "linode.png"
+    },
+    {
       "name": "Hack Club Bank",
       "link": "https://hackclub.com/bank",
       "image": "hackclub-bank.svg"
