@@ -76,7 +76,12 @@
       "image": "mikes.png"
     },
     {
-      "name": "Hack Club Bank",
+      "name": "Invent Penn State",
+      "link": "https://invent.psu.edu",
+      "image": "ips.png"
+    },
+    {
+      "name": "Hack Club Bank",i
       "link": "https://hackclub.com/bank",
       "image": "hackclub-bank.svg"
     }
