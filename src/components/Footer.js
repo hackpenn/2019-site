@@ -9,7 +9,7 @@ const Service = ({ href, service, ...props }) => (
     rel="noopener"
     href={href}
     mx={3}
-    color="muted"
+    color={theme.colors.primaryDark}
     aria-label={service}
     children={<Icon glyph={service} size={36} />}
     {...props}
@@ -19,8 +19,8 @@ const Service = ({ href, service, ...props }) => (
 const Footer = ({ children }) => (
   <Box.footer
     py={[4, 5]}
-    bg={theme.colors.smoke}
-    color={theme.colors.slate}
+    bg={theme.colors.primaryWash}
+    color={theme.colors.primaryDark}
     align="center"
   >
     {children}
