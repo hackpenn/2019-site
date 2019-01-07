@@ -163,12 +163,12 @@ export default () => (
         <Grid mt={[4, 5]} color="white">
           <Box bg="primary" p={[3, 4]}>
             <Heading.h3 fontSize={[4, 5]} my={0}>
-              We’ve ele
+              Sprucing up PA
             </Heading.h3>
             <Text fontSize={3} my={2}>
               Last spring, we ran central PA’s first community-organized HS
               hackathon. This year, the event grows bigger + better—a tree-umph,
-              we could say.
+              we might say.
             </Text>
             <A
               href="https://hackhappyvalley.com/recap"
