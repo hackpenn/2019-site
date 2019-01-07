@@ -321,7 +321,7 @@ export default class RegistrationForm extends React.Component {
               disabled={isSubmitting}
               scale
             >
-              Submit
+              Claim my spot
             </LargeButton>
           </form>
         )}
