@@ -265,10 +265,8 @@ export default class RegistrationForm extends React.Component {
               </option>
             </FormField>
             <Explanation>
-              For more information on the buses we’re sending, see our{' '}
-              <a href="/#FAQ-travel" children="FAQs" />. If you select travel
-              reimbursement (and you’re not from those areas), we’ll contact you
-              later if money is available.
+              If you select travel reimbursement, we’ll 
+              contact you later if money is available.
             </Explanation>
             <Box my={3}>
               <Heading.h3>Emergency Contact Information</Heading.h3>
