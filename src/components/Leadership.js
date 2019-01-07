@@ -11,9 +11,14 @@ const Leadership = () => (
       <Heading.h2 color="primaryDark" fontSize={[5, 6]} mb={2}>
         Leadership
       </Heading.h2>
-      <Text color="slate" fontSize={[3, 4]} mb={4}>
-        We’re a diverse group of high school students passionate about
-        revitalizing PA through coding.
+      <Text
+        color="black"
+        fontSize={[3, 4]}
+        mb={4}
+        style={{ maxWidth: '48rem' }}
+      >
+        We’re a passionate, diverse group of high school students planting new
+        seeds in PA through coding. 🌱
       </Text>
       <Leaders />
     </Container>

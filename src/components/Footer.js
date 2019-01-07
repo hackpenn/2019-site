@@ -24,6 +24,9 @@ const Footer = ({ children }) => (
     align="center"
   >
     {children}
+    <Heading.h3 fontSize={2} align="center" caps mb={2}>
+      Pining to talk?
+    </Heading.h3>
     <Flex justify="center" align="center" wrap mb={3}>
       <Service href={urls.twitter} service="twitter" />
       <Service href={urls.instagram} service="instagram" />

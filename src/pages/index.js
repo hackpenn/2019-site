@@ -197,11 +197,11 @@ export default () => (
           />
           <Question
             name="What if I’m new to coding?"
-            body="Complete beginners are not only welcome, but expected! Learn as you go with our starting workshops and mentors."
+            body="Still elemen-tree? Complete beginners are not only welcome, but expected! Learn as you go with our intro workshops & mentors."
           />
           <Question
             name="What if I already know how to code?"
-            body="All skill levels are welcome! Though we primarily market to beginners, we welcome experts (and everyone in between) too."
+            body="All skill levels are welcome! Though we primarily market to beginners, we welcome experts (& everyone in between)."
           />
           <Question
             name="How much does it cost?"
@@ -209,20 +209,20 @@ export default () => (
           />
           <Question
             name="Do I need a team?"
-            body="Nope! You’ll have an opportunity to meet fellow hackers, and make teams up to 4—find new friends! Or you can work alone."
+            body="Nope! You’ll have an opportunity to meet fellow hackers and make teams up to 4—find some new friends! Or you can work alone."
           />
           <Question
             name="What can I make?"
-            body="Anything! A website, mobile app, game, hardware, you name it. Judges will rate projects on creativity, technical difficulty, polish, and utility."
+            body="Anything! A website, app, game, hardware, you name it. Judges will rate projects on creativity, technical difficulty, polish, & utility."
           />
           <Question
             name="What should I bring?"
-            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (like hardware), toiletries, and a sleeping bag (if you’ll sleep)."
+            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (hardware?), toiletries, & a sleeping bag (optional)."
           />
           <Question
             id="FAQ-travel"
             name="How do I get there?"
-            body="We’ll send buses to Pittsburgh & Philadelphia on the morning of Jan 19, so if you’re in PA, it’s super easy to come. For out-of-state, we’re currently looking into offering travel reimbursements—stay tuned."
+            body="Any way you like! Check-in starts at 11am. We’re offering limited travel reimbursements ($25) to a few dozen hackers."
           />
         </Questions>
       </Container>
@@ -231,7 +231,7 @@ export default () => (
       <Container width={1} px={3} pt={3} pb={[4, 5, 6]}>
         <Bannerline />
         <Headline color="primaryDark">Sponsors</Headline>
-        <Text fontSize={3} color={theme.colors.slate} mb={4}>
+        <Text fontSize={3} color={theme.colors.steel} mb={4}>
           Want to sponsor Hack Pennsylvania?{' '}
           <A
             href="mailto:theo@hackpenn.com"
