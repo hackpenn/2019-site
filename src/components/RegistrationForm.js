@@ -14,6 +14,10 @@ const FormField = styled(Field).attrs({
   bg: theme.colors.white
 })`
   border: 1px solid ${theme.colors.gray[3]};
+  &:focus {
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 1px ${theme.colors.primary};
+  }
 `
 const Explanation = styled(Text).attrs({
   fontSize: 1,
@@ -301,21 +305,21 @@ export default class RegistrationForm extends React.Component {
               Additional Details
             </Heading.h3>
             <FormField
+              type="text"
+              name="referrer"
+              label="How did you hear about us?"
+              placeholder="Teacher, principal, friend’s name, etc"
+              error={errors.referrer}
+              value={values.referrer}
+              onChange={handleChange}
+            />
+            <FormField
               type="textarea"
               name="note"
               label="Questions, comments, etc"
               placeholder="Tell us your thoughts… (optional)"
               error={errors.note}
               value={values.note}
-              onChange={handleChange}
-            />
-            <FormField
-              type="text"
-              name="referrer"
-              label="How did you hear about us?"
-              placeholder="Teacher, principal, etc"
-              error={errors.referrer}
-              value={values.referrer}
               onChange={handleChange}
             />
             <LargeButton

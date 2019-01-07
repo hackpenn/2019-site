@@ -3,28 +3,34 @@ import styled from 'styled-components'
 import { Text, Flex } from '@hackclub/design-system'
 import { theme } from 'theme'
 
-const Background = styled(Flex)`
-  flex-direction: column;
+const Background = styled(Flex).attrs({
+  flexDirection: 'column',
+  className: 'sans'
+})`
   flex-shrink: 0;
   overflow: hidden;
   text-align: center;
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   border-color: ${theme.colors.white};
   border-style: solid;
-  border-width: 3px;
-  border-radius: 16px;
-  font-weight: 800;
+  border-width: 6px;
+  border-radius: 24px;
+  font-weight: bold !important;
 `
-const Month = styled(Text).attrs({
+const Month = styled(Text.span).attrs({
   fontSize: 3,
   py: 1,
   bg: 'white',
-  color: 'black'
+  color: 'primary',
+
+  caps: true
 })`
-  line-height: 1;
+  display: block;
+  line-height: 1.5;
 `
-const Day = styled(Text).attrs({ fontSize: 6, color: 'primary' })`
+const Day = styled(Text.span).attrs({ color: 'white' })`
+  font-size: 64px;
   line-height: 1.25;
 `
 

@@ -5,10 +5,11 @@ const Grid = styled(Box)`
   display: grid;
   grid-gap: ${({ theme }) => theme.space[2]}px;
   width: 100%;
-  > div {
+  > div,
+  > img {
     width: 100%;
-    box-shadow: ${({ theme }) => theme.boxShadows[2]};
-    border-radius: ${({ theme }) => theme.radius};
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.125);
+    border-radius: ${({ theme }) => theme.radii[2]};
     max-width: 100%;
     min-height: 16rem;
   }

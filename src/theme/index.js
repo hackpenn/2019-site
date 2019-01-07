@@ -39,6 +39,10 @@ injectGlobal`
   h3 {
     font-weight: 900;
   }
+  .sans {
+    font-family: ${config.font};
+  }
+  .mono,
   h1 + h2,
   p {
     font-family: ${config.mono};

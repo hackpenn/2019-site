@@ -12,18 +12,19 @@ import {
   Link as A
 } from '@hackclub/design-system'
 import { theme } from 'theme'
-import Layout from 'components/Layout'
-import Bannerline from 'components/Bannerline'
-import Nav from 'components/Nav'
 import Action from 'components/Action'
-import Module from 'components/Module'
+import Apply from 'components/Apply'
+import Bannerline from 'components/Bannerline'
+import Calendar from 'components/Calendar'
+import Footer from 'components/Footer'
 import Grid from 'components/Grid'
+import Headline from 'components/Headline'
+import Layout from 'components/Layout'
+import Leadership from 'components/Leadership'
+import Module from 'components/Module'
+import Nav from 'components/Nav'
 import Photo from 'components/Photo'
 import Sponsors from 'components/Sponsors'
-import Leadership from 'components/Leadership'
-import Apply from 'components/Apply'
-import Footer from 'components/Footer'
-import Headline from 'components/Headline'
 
 const Lead = styled(Container.withComponent(Text)).attrs({
   fontSize: 4,
@@ -71,7 +72,7 @@ const Questions = styled(Container).attrs({ maxWidth: 72, mt: [3, 4] })`
 const Question = ({ name, body, ...props }) => (
   <Card p={[3, 4]} {...props}>
     <Heading.h3 f={2} color="altDark" caps mt={0} mb={[1, 2]} children={name} />
-    <Text f={2} color="slate" my={0} children={body} />
+    <Text f={2} color="black" my={0} children={body} />
   </Card>
 )
 
@@ -81,8 +82,8 @@ export default () => (
     <Box.header
       bg={theme.colors.primaryDark}
       color={theme.colors.white}
-      pt={[4, 5]}
-      pb={[3, 5, 6]}
+      pt={[3, 4]}
+      pb={[3, 5]}
     >
       <Container width={1} px={3}>
         <Image
@@ -94,15 +95,21 @@ export default () => (
           style={{ fontFamily: theme.mono }}
           mt={3}
         >
-          Pennsylvania’s premiere high&nbsp;school hackathon is back.
+          High schoolers: learn to code with 24&nbsp;hours of fun, free food, &
+          prizes.
         </Heading.h1>
-        <Heading.h3 fontSize={[3, 4]} style={{ fontFamily: theme.mono }} mt={3}>
-          January 19-20, 2019 in State&nbsp;College, PA.
-        </Heading.h3>
-        <Flex align="center" wrap mt={4}>
+        <Flex align="center" my={4}>
+          <Calendar month="January" day={19} />
+          <Text.span align="left" fontSize={[3, 4]} ml={4} className="mono">
+            Free registration
+            <br />
+            State&nbsp;College, PA
+          </Text.span>
+        </Flex>
+        <Flex align="center" wrap>
           <Action
             to="/register"
-            children="Register"
+            children="Reserve your spot"
             fontSize={[3, 4]}
             bg={theme.colors.primary}
             chevronRight
@@ -122,40 +129,59 @@ export default () => (
       >
         <Container maxWidth={48} mx={0}>
           <Bannerline />
-          <Headline color="primaryDark">
-            24 hours of coding, fun, free food, & prizes.
-          </Headline>
-          <Lead maxWidth={48}>
-            Hack Pennsylvania is a hackathon, a 24-hour coding event. 200
-            students from across the state will come for the day. You’ll work
-            with a team (or solo) to build an app, game, or website. We’ll help
-            get you started, provide free food & drinks, and you can sleep (or
-            not). 24 hours later, a group of judges will pick the best projects
-            to demo and win prizes.
+          <Headline color="primaryDark">Welcome to the “hackathon.”</Headline>
+          <Lead my={3} maxWidth={48}>
+            Hack Pennsylvania is a 24-hour event where 100 programmers, artists,
+            designers, & other high schoolers from across the Northeast will
+            come to together to build apps & games. We’ll provide workshops,
+            mentorship, free meals & drinks, & places to sleep. The next
+            morning, judges will pick the best projects to demo and win prizes.
           </Lead>
         </Container>
         <Modules>
           <Module
             icon="welcome"
             name="Beginner-oriented"
-            body="Most attendees will be new to coding, so we’ll have workshops and mentors to get you going."
+            body="Students of all skill levels are welcome—we’ll hold multiple intro workshops & mentors will help you out!"
           />
           <Module
-            icon="support"
-            name="A safe space for all"
-            body="You’ll be in a friendly, safe environment, with diverse attendees, free of harassment."
+            icon="emoji"
+            name="Endless fun"
+            body="It goes way beyond coding. Meet new friends, come to the 2am dancy party, win prizes."
+          />
+          <Module
+            icon="rep"
+            name="Fab food"
+            body="You’ll be served Panera dinner, midnight ice cream, bagel breakfast, & continuous snacks. (alt’s available)"
+          />
+          <Module
+            icon="bag"
+            name="You woodn’t believe the prizes"
+            body="Pine over the AirPods, Google Homes, Raspberry Pis, speakers, batteries, software subscriptions, & much more."
           />
         </Modules>
-        <Grid mt={4} color="white">
+        <Grid mt={[4, 5]} color="white">
           <Box bg="primary" p={[3, 4]}>
-            <Heading.h3 f={[4, 5]} my={0}>
-              Last year.
+            <Heading.h3 fontSize={[4, 5]} my={0}>
+              We’ve ele
             </Heading.h3>
-            <Text f={3} mt={2}>
-              We organized central Pennsylvania’s first high school hackathon.
-              We saw dozens of teens learn to code & hone their skills. With
-              tens of projects presented, it was a major success.
+            <Text fontSize={3} my={2}>
+              Last spring, we ran central PA’s first community-organized HS
+              hackathon. This year, the event grows bigger + better—a tree-umph,
+              we could say.
             </Text>
+            <A
+              href="https://hackhappyvalley.com/recap"
+              color="inherit"
+              underline
+              chevronRight
+              bold
+              fontSize={3}
+              mt={2}
+              className="sans"
+            >
+              See what happened at the last event
+            </A>
           </Box>
           <HiddenPhoto
             xs
@@ -169,13 +195,13 @@ export default () => (
           />
           <Box bg="primaryDark" p={[3, 4]}>
             <Heading.h3 f={[4, 5]} my={0}>
-              This year.
+              Hacking‽ Is that safe?
             </Heading.h3>
             <Text f={3} mt={2}>
-              We’re dramatically expanding our reach by sending buses to
-              Pittsburgh & Philadelphia. We encourage both beginners & more
-              experienced coders to come: everyone will learn something, and
-              maybe even win a prize.
+              Hold up! No, we’re not “hacking” servers or databases. The word is
+              being constructively re-defined as building things—apps, games,
+              websites, etc. At Hack Pennsylvania, it’s all safe, supervised, &
+              entirely educational.
             </Text>
           </Box>
         </Grid>
@@ -193,7 +219,7 @@ export default () => (
         <Questions>
           <Question
             name="Who can participate?"
-            body="Any current high school student! If you’re under/over that age, send us an email (below) and we’ll see what we can do."
+            body="Any current student grades 8–12. If you’re under/over that age, send us an email (below) & we’ll see what we can do."
           />
           <Question
             name="What if I’m new to coding?"
@@ -209,7 +235,7 @@ export default () => (
           />
           <Question
             name="Do I need a team?"
-            body="Nope! You’ll have an opportunity to meet fellow hackers and make teams up to 4—find some new friends! Or you can work alone."
+            body="Nope! You’ll have an opportunity to meet fellow hackers and make teams up to 4—find some new friends, bring yours, or work alone."
           />
           <Question
             name="What can I make?"

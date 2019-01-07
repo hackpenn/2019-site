@@ -34,24 +34,20 @@ const ShareButton = ({ children, ...props }) => (
 export default () => (
   <Layout>
     <Nav />
-    <Box
-      bg={theme.colors.primaryDark}
-      color={theme.colors.white}
-      px={2}
-      pt={[4, 5]}
-      pb={[4, 5, 6]}
-    >
-      <Container width={1} px={3}>
-        <Headline fontSize={[6, 7]}>Register</Headline>
+    <Box bg={theme.colors.primaryDark} color={theme.colors.white} pb={[4, 5]}>
+      <Container maxWidth={36} align="center" width={1} px={3}>
+        <Headline mt={0} fontSize={[6, 7]}>
+          Get your free&nbsp;ticket
+        </Headline>
         <Heading.h2
           fontSize={[3, 4, 5]}
           style={{ fontFamily: theme.mono }}
           mt={3}
         >
-          The event is totally free, lots of food, drinks, and prizes included.
+          Reserve your spot for Hack Pennsylvania on January 19.
         </Heading.h2>
-        <Sheet mt={4}>
-          <Container maxWidth={32}>
+        <Sheet maxWidth={36} mx={0} mt={4} align="left">
+          <Container maxWidth={32} mx={0}>
             <RegistrationForm />
           </Container>
         </Sheet>
