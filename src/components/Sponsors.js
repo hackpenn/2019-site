@@ -11,6 +11,7 @@ const Base = styled(Container)`
   justify-content: center;
   img {
     max-width: 87.5%;
+    max-height: 2.5rem;
   }
 `
 
