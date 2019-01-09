@@ -46,6 +46,7 @@ const Nav = ({ color = theme.colors.white, ...props }) => (
     <Inner color={color} py={[1, 0]}>
       <Flag />
       <Box role="navigation" ml={3}>
+        <Item to="/schedule" children="Schedule" />
         <Item to="/register" children="Register" />
       </Box>
     </Inner>
