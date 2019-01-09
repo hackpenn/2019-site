@@ -50,7 +50,11 @@ export default () => (
               <Box mt={3}>
                 {day.events.map(event => (
                   <Event>
-                    {event.time} — {event.name}
+                    {event.time} —{' '}
+                    <span role="img" aria-label={event.name}>
+                      {event.emoji}
+                    </span>{' '}
+                    {event.name}
                   </Event>
                 ))}
               </Box>
