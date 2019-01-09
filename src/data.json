@@ -86,6 +86,11 @@
       "image": "linode.png"
     },
     {
+      "name": "1Password",
+      "link": "https://1password.com",
+      "image": "1password.png"
+    },
+    {
       "name": "Repl.it",
       "link": "https://repl.it",
       "image": "replit.png"
