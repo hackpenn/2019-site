@@ -24,9 +24,9 @@ export default () => (
       pb={[4, 5, 6]}
     >
       <Container width={1} px={3}>
-        <Headline fontSize={[6, 7]}>Schedule</Headline>
+        <Headline fontSize={[7, 8]}>Schedule</Headline>
         <Heading.h2
-          fontSize={[3, 4, 5]}
+          fontSize={[4, 5, 6]}
           style={{ fontFamily: theme.mono }}
           mt={3}
         >
