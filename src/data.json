@@ -86,6 +86,11 @@
       "image": "linode.png"
     },
     {
+      "name": "Repl.it",
+      "link": "https://repl.it",
+      "image": "replit.png"
+    },
+    {
       "name": "Ben Franklin Technology Partners",
       "link": "https://benfranklin.org/",
       "image": "ben-franklin.jpg"
