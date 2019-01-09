@@ -71,9 +71,30 @@ const Questions = styled(Container).attrs({ maxWidth: 72, mt: [3, 4] })`
 `
 const Question = ({ name, body, ...props }) => (
   <Card p={[3, 4]} {...props}>
-    <Heading.h3 f={2} color="altDark" caps mt={0} mb={[1, 2]} children={name} />
-    <Text f={2} color="black" my={0} children={body} />
+    <Heading.h3
+      fontSize={2}
+      color="altDark"
+      caps
+      mt={0}
+      mb={[1, 2]}
+      children={name}
+    />
+    <Text fontSize={2} color="black" my={0} children={body} />
   </Card>
+)
+
+const LinkOut = props => (
+  <A
+    color="inherit"
+    underline
+    chevronRight
+    bold
+    fontSize={3}
+    mt={2}
+    className="sans"
+    style={{ display: 'block' }}
+    {...props}
+  />
 )
 
 export default () => (
@@ -170,18 +191,9 @@ export default () => (
               hackathon. This year, the event grows bigger + better—a tree-umph,
               we might say.
             </Text>
-            <A
-              href="https://hackhappyvalley.com/recap"
-              color="inherit"
-              underline
-              chevronRight
-              bold
-              fontSize={3}
-              mt={2}
-              className="sans"
-            >
+            <LinkOut href="https://hackhappyvalley.com/recap">
               See what happened at the last event
-            </A>
+            </LinkOut>
           </Box>
           <HiddenPhoto
             xs
@@ -248,7 +260,35 @@ export default () => (
           <Question
             id="FAQ-travel"
             name="How do I get there?"
-            body="Any way you like! Check-in starts at 11am. We’re offering limited travel reimbursements ($25) to a few dozen hackers."
+            body="Any way you like! Check-in starts at 11am. We’re offering limited travel reimbursements ($30) to a few dozen hackers."
+          />
+          <Question
+            name="Who runs this? Is it supervised?"
+            body={
+              <>
+                We’re independently-organized by a group of high schoolers
+                through an international non-profit called{' '}
+                <A href="https://hackclub.com">Hack Club</A>. The event is
+                fully-supervised, by over a dozen adults.
+              </>
+            }
+          />
+          <Question
+            name="Where is it?"
+            body={
+              <>
+                Parish Hall at Good Shepherd Catholic Church: 867 Grays Woods
+                Blvd, Port Matilda, PA 16870. There is free parking for
+                attendees & parents.
+                <LinkOut
+                  fontSize={2}
+                  color="primary"
+                  href="https://goo.gl/maps/e1zaGxas6442"
+                >
+                  View on Google Maps
+                </LinkOut>
+              </>
+            }
           />
         </Questions>
       </Container>
