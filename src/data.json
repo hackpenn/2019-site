@@ -87,31 +87,43 @@
       "events": [
         {
           "time": "11:00 AM",
-          "name": "Registration Opens"
+          "name": "Doors Open",
+          "emoji": "👋"
         },
         {
           "time": "12:00 PM",
-          "name": "Opening Ceremony"
+          "name": "Opening Ceremony",
+          "emoji": "📢"
         },
         {
           "time": "12:30 PM",
-          "name": "Team Formation (optional)"
+          "name": "Hacking Begins",
+          "emoji": "👩‍💻"
+        },
+        {
+          "time": "12:30 PM",
+          "name": "Team Formation (optional)",
+          "emoji": "👥"
         },
         {
           "time": "1:00 PM",
-          "name": "Hacking Begins"
+          "name": "Workshop: Your First Website",
+          "emoji": "🧙"
         },
         {
-          "time": "1:30 PM",
-          "name": "Workshop: Intro to HTML/CSS"
+          "time": "2:30 PM",
+          "name": "Workshop: To Be Announced!",
+          "emoji": "🌀"
         },
         {
-          "time": "3:00 PM",
-          "name": "Workshop: Intro to JavaScript"
+          "time": "4:00 PM",
+          "name": "Workshop: To Be Announced!",
+          "emoji": "🌀"
         },
         {
-          "time": "7:00 PM",
-          "name": "Dinner"
+          "time": "6:30 PM",
+          "name": "Dinner",
+          "emoji": "🍽️"
         }
       ]
     },
@@ -120,31 +132,43 @@
       "events": [
         {
           "time": "12:00 AM",
-          "name": "Midnight Snack"
+          "name": "Midnight Snack",
+          "emoji": "🍦"
+        },
+        {
+          "time": "2:00 AM",
+          "name": "DANCE PARTY",
+          "emoji": "👯‍"
+        },
+        {
+          "time": "3:30 AM",
+          "name": "Game Break",
+          "emoji": "👾"
         },
         {
           "time": "7:00 AM",
-          "name": "Breakfast"
+          "name": "Breakfast",
+          "emoji": "🍳"
         },
         {
           "time": "8:30 AM",
-          "name": "Hacking Ends"
+          "name": "Hacking Ends",
+          "emoji": "⌛"
         },
         {
           "time": "9:00 AM",
-          "name": "Judging"
-        },
-        {
-          "time": "11:00 AM",
-          "name": "Brunch"
+          "name": "Judging",
+          "emoji": "💬"
         },
         {
           "time": "11:30 AM",
-          "name": "Closing Ceremony"
+          "name": "Closing Ceremony",
+          "emoji": "📢"
         },
         {
           "time": "12:00 PM",
-          "name": "Event Ends"
+          "name": "Event Ends",
+          "emoji": "😭"
         }
       ]
     }
