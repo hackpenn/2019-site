@@ -129,7 +129,7 @@ export default () => (
           <Text.span align="left" fontSize={[3, 4]} ml={4} className="mono">
             <strong>Free registration</strong>
             <br />
-            <A.link color="inherit" underline chevronRight to="/venue">
+            <A.link color="inherit" underline chevronRight to="/location">
               State&nbsp;College, PA
             </A.link>
           </Text.span>
