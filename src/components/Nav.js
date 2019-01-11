@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { Flex, Box, Container, Link as A } from '@hackclub/design-system'
 import { theme } from 'theme'
+import Action from 'components/Action'
 import Flag from 'components/Flag'
 import Link from 'gatsby-link'
 
-const Base = styled(Box).attrs({
+const Base = styled(Box.withComponent('header')).attrs({
   bg: theme.colors.primaryDark,
   py: 3,
   width: 1
@@ -22,17 +23,8 @@ const Inner = styled(Container.withComponent(Flex)).attrs({
   role: 'navigation'
 })``
 
-export const Item = styled(A.withComponent(Link)).attrs({
-  color: 'white',
-  fontSize: [2, 3],
-  my: 1,
-  mx: [2, 3]
-})`
+const Bar = styled(Box.withComponent('nav'))`
   opacity: 0.875;
-  text-transform: uppercase;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
   transition: ${theme.transition} opacity;
 
   &:hover,
@@ -41,14 +33,38 @@ export const Item = styled(A.withComponent(Link)).attrs({
   }
 `
 
-const Nav = ({ color = theme.colors.white, ...props }) => (
+const Item = styled(A.withComponent(Link)).attrs({
+  color: 'white',
+  fontSize: [2, 3],
+  my: 1,
+  mx: 3
+})`
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+`
+
+const BtnItem = styled(Action).attrs({
+  bg: theme.colors.primary,
+  inverted: true,
+  fontSize: [2, 3],
+  px: 3,
+  py: 2,
+  my: 1,
+  mx: 3
+})`
+  text-transform: uppercase;
+`
+
+const Nav = ({ color = 'white', ...props }) => (
   <Base role="banner" {...props}>
     <Inner color={color} py={[1, 0]}>
       <Flag />
-      <Box role="navigation" ml={3}>
+      <Bar role="navigation" ml={3} align="left">
         <Item to="/schedule" children="Schedule" />
-        <Item to="/register" children="Register" />
-      </Box>
+        <BtnItem to="/register" children="Register" />
+      </Bar>
     </Inner>
   </Base>
 )
