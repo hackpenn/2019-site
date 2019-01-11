@@ -19,15 +19,21 @@ const Service = ({ href, service, ...props }) => (
 const Footer = ({ children }) => (
   <Box.footer
     py={[4, 5]}
-    bg={theme.colors.primaryWash}
-    color={theme.colors.primaryDark}
+    bg={theme.colors.smoke}
+    color={theme.colors.steel}
     align="center"
   >
     {children}
     <Heading.h3 fontSize={2} align="center" caps mb={2}>
       Pining to talk?
     </Heading.h3>
-    <Flex justify="center" align="center" wrap mb={3}>
+    <Flex
+      color={theme.colors.primaryDark}
+      justify="center"
+      align="center"
+      wrap
+      mb={3}
+    >
       <Service href={urls.twitter} service="twitter" />
       <Service href={urls.instagram} service="instagram" />
       <Service href={urls.facebook} service="facebook" />
