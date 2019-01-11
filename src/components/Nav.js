@@ -62,6 +62,7 @@ const Nav = ({ color = 'white', ...props }) => (
     <Inner color={color} py={[1, 0]}>
       <Flag />
       <Bar role="navigation" ml={3} align="left">
+        <Item to="/location" children="Location" />
         <Item to="/schedule" children="Schedule" />
         <BtnItem to="/register" children="Register" />
       </Bar>

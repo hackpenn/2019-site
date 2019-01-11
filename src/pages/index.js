@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
   Box,
   Container,
@@ -12,6 +12,7 @@ import {
   Link as A
 } from '@hackclub/design-system'
 import { theme } from 'theme'
+import { Link } from 'gatsby'
 import Action from 'components/Action'
 import Apply from 'components/Apply'
 import Bannerline from 'components/Bannerline'
@@ -21,6 +22,7 @@ import Grid from 'components/Grid'
 import Headline from 'components/Headline'
 import Layout from 'components/Layout'
 import Leadership from 'components/Leadership'
+import Modules from 'components/Modules'
 import Module from 'components/Module'
 import Nav from 'components/Nav'
 import Photo from 'components/Photo'
@@ -30,23 +32,6 @@ const Lead = styled(Container.withComponent(Text)).attrs({
   fontSize: 4,
   mx: 'auto'
 })``
-
-const Modules = styled(Container).attrs({
-  mt: 4,
-  maxWidth: 48,
-  mx: 0,
-  align: 'left'
-})`
-  display: grid;
-  grid-gap: ${theme.space[3]}px;
-  svg {
-    color: ${theme.colors.accent};
-  }
-  ${theme.mediaQueries.md} {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: ${theme.space[4]}px;
-  }
-`
 
 const HiddenPhoto = styled(Hide.withComponent(Photo))``
 
@@ -71,31 +56,51 @@ const Questions = styled(Container).attrs({ maxWidth: 72, mt: [3, 4] })`
 `
 const Question = ({ name, body, ...props }) => (
   <Card p={[3, 4]} {...props}>
-    <Heading.h3
-      fontSize={2}
-      color="altDark"
-      caps
-      mt={0}
-      mb={[1, 2]}
-      children={name}
-    />
+    <Heading.h3 fontSize={2} caps mt={0} mb={[1, 2]} children={name} />
     <Text fontSize={2} color="black" my={0} children={body} />
   </Card>
 )
 
-const LinkOut = props => (
-  <A
-    color="inherit"
-    underline
-    chevronRight
-    bold
-    fontSize={3}
-    mt={2}
-    className="sans"
-    style={{ display: 'block' }}
-    {...props}
-  />
+/*
+const Prizes = styled(Box)`
+  display: grid;
+  grid-gap: ${theme.space[3]}px;
+  grid-column: span 2;
+  ${theme.mediaQueries.md} {
+    grid-template-columns: auto 1fr;
+  }
+  > div {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  ${Prize} {
+    max-width: 12rem;
+  }
+`
+const Prize = ({ img, name }) => (
+  <Flex align="center" className="sans" mx={3}>
+    <Image src={`/prizes/${img}`} />
+    <Text bold fontSize={3} children={name} />
+  </Flex>
 )
+*/
+
+const LinkOut = styled(A).attrs({
+  color: 'inherit',
+  underline: true,
+  chevronRight: true,
+  bold: true,
+  fontSize: 3,
+  mt: 3,
+  className: 'sans'
+})`
+  display: block;
+`
+LinkOut.span = styled(Text.span.withComponent(LinkOut))`
+  margin-top: ${theme.space[3]}px;
+`
+LinkOut.link = styled(LinkOut.withComponent(Link))``
+A.link = styled(A.withComponent(Link))``
 
 export default () => (
   <Layout>
@@ -122,9 +127,11 @@ export default () => (
         <Flex align="center" my={4}>
           <Calendar month="January" day={19} />
           <Text.span align="left" fontSize={[3, 4]} ml={4} className="mono">
-            Free registration
+            <strong>Free registration</strong>
             <br />
-            State&nbsp;College, PA
+            <A.link color="inherit" underline chevronRight to="/venue">
+              State&nbsp;College, PA
+            </A.link>
           </Text.span>
         </Flex>
         <Flex align="center" wrap>
@@ -230,20 +237,20 @@ export default () => (
         <Headline>FAQ</Headline>
         <Questions>
           <Question
+            name="How much does it cost?"
+            body="Nothing, it’s totally free. Registration and attendance are 100% free, with meals, drinks, swag, & workshops included."
+          />
+          <Question
             name="Who can participate?"
-            body="Any current student grades 8–12. If you’re under/over that age, send us an email (below) & we’ll see what we can do."
+            body="Any current student grades 8–12. If you’re under/over that age, send us a chat (in the corner) & we’ll see what we can do."
           />
           <Question
             name="What if I’m new to coding?"
-            body="Still elemen-tree? Complete beginners are not only welcome, but expected! Learn as you go with our intro workshops & mentors."
+            body="Are you elemen-tree? Complete beginners are not only welcome, but expected! Learn as you go with our intro workshops & mentors."
           />
           <Question
             name="What if I already know how to code?"
-            body="All skill levels are welcome! Though we primarily market to beginners, we welcome experts (& everyone in between)."
-          />
-          <Question
-            name="How much does it cost?"
-            body="Nothing, it’s totally free! Registration and attendance are 100% free, with meals, drinks, swag, & workshops included."
+            body="All skill levels are welcome. Though we primarily market to beginners, we welcome experts (& everyone in between)."
           />
           <Question
             name="Do I need a team?"
@@ -255,44 +262,89 @@ export default () => (
           />
           <Question
             name="What should I bring?"
-            body="Bring your student ID, a computer, chargers, anything you’ll need for your hack (hardware?), toiletries, & a sleeping bag (optional)."
-          />
-          <Question
-            id="FAQ-travel"
-            name="How do I get there?"
-            body="Any way you like! Check-in starts at 11am. We’re offering limited travel reimbursements ($30) to a few dozen hackers."
+            body="Student ID, computer, chargers, anything for your hack (hardware?), toiletries, & a sleeping bag (maybe). For a few dozen hackers we have $30 travel reimbursements (bring receipts)."
           />
           <Question
             name="Who runs this? Is it supervised?"
             body={
               <>
-                We’re independently-organized by a group of high schoolers
-                through an international non-profit called{' '}
-                <A href="https://hackclub.com">Hack Club</A>. The event is
-                fully-supervised, by over a dozen adults.
-              </>
-            }
-          />
-          <Question
-            name="Where is it?"
-            body={
-              <>
-                Parish Hall at Good Shepherd Catholic Church: 867 Grays Woods
-                Blvd, Port Matilda, PA 16870. There is free parking for
-                attendees & parents.
-                <LinkOut
-                  fontSize={2}
-                  color="primary"
-                  href="https://goo.gl/maps/e1zaGxas6442"
-                >
-                  View on Google Maps
-                </LinkOut>
+                We’re independently-organized by high schoolers through an intl.
+                non-profit called{' '}
+                <A href="https://hackclub.com" color={theme.colors.accent}>
+                  Hack Club
+                </A>
+                . The event is fully-supervised by over a dozen adults (with
+                background checks).
               </>
             }
           />
         </Questions>
       </Container>
     </Box.section>
+    <Box.section bg={theme.colors.snow} id="details" py={[5, 6]}>
+      <Container width={1} px={3}>
+        <Bannerline mt={0} />
+        <Headline color="primaryDark">Get all the details.</Headline>
+        <Grid mt={4}>
+          <A.link to="/schedule">
+            <Module
+              icon="event-code"
+              name="Schedule"
+              lg
+              color={theme.colors.slate}
+              body="Saturday 12pm–Sunday 12pm, with a lot in between. Doors open 11am next weekend, hacking starts at 12:30pm. Sleep after it :)"
+            >
+              <LinkOut.span
+                to="/schedule"
+                children="See the full schedule"
+                color={theme.colors.accent}
+              />
+            </Module>
+          </A.link>
+          <A.link to="/location">
+            <Module
+              icon="pin"
+              name="Location"
+              lg
+              color={theme.colors.slate}
+              iconColor={theme.colors.info}
+              body={
+                <>
+                  <Text.span bold>Good Shepherd Catholic Church</Text.span>
+                  <br />
+                  867 Grays Woods Blvd
+                  <br />
+                  Port Matilda, PA 16870
+                </>
+              }
+            >
+              <LinkOut.span
+                to="/location"
+                children="Check out the venue"
+                color={theme.colors.info}
+              />
+            </Module>
+          </A.link>
+          {/*
+          <Prizes bg={theme.colors.white}>
+            <Module
+              icon="challenge"
+              name="Prizes"
+              lg
+              color={theme.colors.slate}
+              iconColor={theme.colors.primary}
+              body="($2k worth!)"
+            >
+              {data.prizes.map(prize => (
+                <Prize key={prize.img} {...prize} />
+              ))}
+            </Module>
+          </Prizes>
+          */}
+        </Grid>
+      </Container>
+    </Box.section>
+    <Apply />
     <Box.section bg={theme.colors.white}>
       <Container width={1} px={3} pt={3} pb={[4, 5, 6]}>
         <Bannerline />
@@ -302,7 +354,7 @@ export default () => (
           <A
             href="mailto:theo@hackpenn.com"
             color={theme.colors.primary}
-            style={{ fontFamily: theme.font }}
+            className="sans"
             hoverline
             chevronRight
           >
@@ -313,7 +365,6 @@ export default () => (
       </Container>
     </Box.section>
     <Leadership />
-    <Apply />
     <Footer />
   </Layout>
 )
