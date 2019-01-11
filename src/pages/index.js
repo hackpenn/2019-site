@@ -141,8 +141,7 @@ export default () => (
             fontSize={[3, 4]}
             bg={theme.colors.primary}
             chevronRight
-            mr={3}
-            mb={3}
+            scale
           />
         </Flex>
       </Container>

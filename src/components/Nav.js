@@ -46,9 +46,10 @@ const Item = styled(A.withComponent(Link)).attrs({
 `
 
 const BtnItem = styled(Action).attrs({
-  bg: theme.colors.primary,
   inverted: true,
+  bg: theme.colors.primary,
   fontSize: [2, 3],
+  scale: true,
   px: 3,
   py: 2,
   my: 1,

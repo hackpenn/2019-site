@@ -41,6 +41,7 @@ const Apply = props => (
         mt={3}
         to="/register"
         bg={theme.colors.primary}
+        scale
         inverted
         chevronRight
       >
