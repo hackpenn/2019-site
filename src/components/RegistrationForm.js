@@ -37,11 +37,14 @@ export default class RegistrationForm extends React.Component {
 
     return submitted ? (
       <Box align="center">
-        <Text fontSize={4}>
-          Thanks for signing up!{' '}
+        <Text fontSize={[3, 4]}>
+          Thanks for registering!{' '}
           <span role="img" aria-label="Celebration emoji">
             🎉
           </span>
+        </Text>
+        <Text fontSize={2}>
+          You should receive a confirmation email shortly.
         </Text>
       </Box>
     ) : signedUp ? (
