@@ -121,11 +121,24 @@ export default () => (
             body="Safety is our highest priority for the event. We’ll have a dozen adults (with background checks) at the event for continuous supervision of attendees."
           />
         </GridItem>
+        <GridItem>
+          <Module
+            lg
             icon="payment-docs"
             name="Travel reimbursement"
             iconColor={theme.colors.primary}
             color={theme.colors.slate}
             body="Accessibility is core to our mission. We’re offering a few dozen attendees $30 travel reimbursements. Make sure to bring your receipts to the event."
+          />
+        </GridItem>
+        <GridItem>
+          <Module
+            lg
+            icon="explore"
+            name="Sleeping arrangements"
+            iconColor={theme.colors.info}
+            color={theme.colors.slate}
+            body="Sleeping during the event is optional but recommended. We’ll have a designated sleeping area at the venue: be sure to bring your sleeping bags!"
           />
         </GridItem>
       </ShortGrid>
