@@ -146,7 +146,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="first_name"
               label="First Name"
-                placeholder="Margaret"
+              placeholder="Margaret"
               error={errors.first_name}
               value={values.first_name}
               onChange={handleChange}
