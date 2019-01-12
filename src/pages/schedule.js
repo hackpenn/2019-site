@@ -46,7 +46,7 @@ const Time = styled.strong`
 `
 const Emoji = styled.span.attrs({ role: 'img' })`
   position: absolute;
-  left: -2.9rem;
+  left: -2.95rem;
   top: 0.3rem;
 
   ${theme.mediaQueries.sm} {
