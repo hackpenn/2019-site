@@ -114,6 +114,13 @@ export default () => (
         <GridItem>
           <Module
             lg
+            icon="support"
+            name="Safety"
+            iconColor={theme.colors.info}
+            color={theme.colors.slate}
+            body="Safety is our highest priority for the event. We’ll have a dozen adults (with background checks) at the event for continuous supervision of attendees."
+          />
+        </GridItem>
             icon="payment-docs"
             name="Travel reimbursement"
             iconColor={theme.colors.primary}
