@@ -12,11 +12,9 @@ import Layout from 'components/Layout'
 import Nav from 'components/Nav'
 import Map from 'components/Map'
 import Footer from 'components/Footer'
-import Grid from 'components/Grid'
 import Photo from 'components/Photo'
-import Sheet from 'components/Sheet'
+import Grid from 'components/Grid'
 import Headline from 'components/Headline'
-import Modules from 'components/Modules'
 import Module from 'components/Module'
 
 const ShortGrid = styled(Container.withComponent(Grid))``
