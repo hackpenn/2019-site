@@ -11,6 +11,8 @@ import data from 'data'
 
 const List = styled(Text.withComponent('ol'))`
   list-style: none;
+  padding: 0 2rem;
+  border-left: 8px solid ${theme.colors.slate};
 `
 
 const Event = styled(Text.withComponent('li')).attrs({
@@ -19,11 +21,26 @@ const Event = styled(Text.withComponent('li')).attrs({
   mb: 2
 })`
   line-height: 1.5;
-  strong {
-    display: block;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color: ${theme.colors.snow};
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.1rem;
+    left: -3.5rem;
   }
 `
-
+const Time = styled.strong`
+  display: block;
+`
+const Emoji = styled.span.attrs({ role: 'img' })`
+  position: absolute;
+  left: -3rem;
+`
 const Schedule = styled(Container).attrs({ mx: 0 })`
   display: grid;
   grid-gap: ${theme.space[3]}px;
@@ -31,7 +48,6 @@ const Schedule = styled(Container).attrs({ mx: 0 })`
     grid-template-columns: repeat(2, 1fr);
   }
 `
-
 export default () => (
   <Layout>
     <Nav />
@@ -39,11 +55,17 @@ export default () => (
       bg={theme.colors.primaryDark}
       color={theme.colors.white}
       px={2}
-      pt={[4, 5]}
-      pb={[3, 4]}
+      py={[4, 5]}
     >
       <Container width={1} px={3}>
         <Headline fontSize={[7, 8]}>Schedule</Headline>
+        <Heading.h2
+          fontSize={[3, 4, 5]}
+          style={{ fontFamily: theme.mono, maxWidth: '42rem' }}
+          mt={3}
+        >
+          The best weekend of your life.
+        </Heading.h2>
       </Container>
     </Box.header>
     <Container width={1} px={3} pb={[4, 5, 6]} color={theme.colors.black}>
@@ -55,10 +77,8 @@ export default () => (
             <List mt={3}>
               {day.events.map(event => (
                 <Event>
-                  <strong children={event.time} />
-                  <span role="img" aria-label={event.name}>
-                    {event.emoji}
-                  </span>{' '}
+                  <Time children={event.time} />
+                  <Emoji aria-label={event.name}>{event.emoji}</Emoji>
                   {event.name}
                 </Event>
               ))}
