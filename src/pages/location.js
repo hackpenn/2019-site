@@ -137,7 +137,7 @@ export default () => (
             name="Sleeping arrangements"
             iconColor={theme.colors.info}
             color={theme.colors.slate}
-            body="Sleeping during the event is optional but recommended. We’ll have a designated sleeping area at the venue: be sure to bring your sleeping bags!"
+            body="Sleeping during the event is optional, but adults recommended it. We’ll have a designated dark sleeping area at the venue: be sure to bring your sleeping bags!"
           />
         </GridItem>
         <GridItem>

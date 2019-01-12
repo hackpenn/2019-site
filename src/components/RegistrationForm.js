@@ -146,7 +146,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="first_name"
               label="First Name"
-              placeholder="Margaret"
+              placeholder="Grace"
               error={errors.first_name}
               value={values.first_name}
               onChange={handleChange}
@@ -155,7 +155,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="last_name"
               label="Last Name"
-              placeholder="Hamilton"
+              placeholder="Hopper"
               error={errors.last_name}
               value={values.last_name}
               onChange={handleChange}
@@ -164,7 +164,7 @@ export default class RegistrationForm extends React.Component {
               type="email"
               name="email"
               label="Email"
-              placeholder="margaret@hackpenn.com"
+              placeholder="grace@hackpenn.com"
               error={errors.email}
               value={values.email}
               onChange={handleChange}
@@ -290,7 +290,7 @@ export default class RegistrationForm extends React.Component {
               type="text"
               name="emergency_email"
               label="Emergency contact email"
-              placeholder="grace@hackpenn.com"
+              placeholder="margaret@hackpenn.com"
               error={errors.emergency_email}
               value={values.emergency_email}
               onChange={handleChange}

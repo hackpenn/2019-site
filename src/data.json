@@ -26,7 +26,7 @@
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "email": "team@hackpenn.com",
+        "email": "contact@hackpenn.com",
         "contactType": "customer support",
         "url": "https://hackpenn.com"
       }
@@ -163,8 +163,8 @@
         },
         {
           "time": "2:00am",
-          "name": "DANCE PARTY",
-          "emoji": "👯‍"
+          "name": "DANCE PARTY!",
+          "emoji": "💃"
         },
         {
           "time": "3:30am",

@@ -18,7 +18,7 @@ const Leadership = () => (
         style={{ maxWidth: '48rem' }}
       >
         We’re a passionate, diverse group of high school students planting new
-        seeds in PA through coding. 🌱
+        seeds of tech talent in PA through coding. 🌱
       </Text>
       <Leaders />
     </Container>

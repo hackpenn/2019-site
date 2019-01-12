@@ -131,7 +131,7 @@ export default () => (
             <br />
             <A.link
               color="inherit"
-              fontSize={2}
+              fontSize={[2, 3]}
               underline
               chevronRight
               to="/location"
@@ -164,7 +164,7 @@ export default () => (
           <Bannerline />
           <Headline color="primaryDark">Welcome to the “hackathon.”</Headline>
           <Lead my={3} maxWidth={48}>
-            Hack Pennsylvania is a 24-hour event where 100 programmers, artists,
+            Hack Pennsylvania is a 24-hour event where 150 programmers, artists,
             designers, & other high schoolers from across the Northeast will
             come to together to build apps & games. We’ll provide workshops,
             mentorship, free meals & drinks, & places to sleep. The next
@@ -190,7 +190,7 @@ export default () => (
           <Module
             icon="bag"
             name="You woodn’t believe the prizes"
-            body="Pine over the AirPods, Google Homes, Raspberry Pis, speakers, batteries, software subscriptions, & much more."
+            body="Pine over the AirPods, Google Home, Raspberry Pi, speakers, batteries, software subscriptions, & much more."
           />
         </Modules>
         <Grid mt={[4, 5]} color="white">
@@ -259,11 +259,11 @@ export default () => (
           />
           <Question
             name="Do I need a team?"
-            body="Nope! You’ll have an opportunity to meet fellow hackers and make teams up to 4—find some new friends, bring yours, or work alone."
+            body="Nope! You’ll have an opportunity to meet fellow hackers and make teams of up to 4—find some new friends, bring yours, or work alone."
           />
           <Question
             name="What can I make?"
-            body="Anything! A website, app, game, hardware, you name it. Judges will rate projects on creativity, technical difficulty, polish, & utility."
+            body="Anything! A website, app, game, hardware, you name it. Judges will rate projects on creativity, technical skill demonstrated, polish, & utility."
           />
           <Question
             name="What should I bring?"
@@ -273,12 +273,12 @@ export default () => (
             name="Who runs this? Is it supervised?"
             body={
               <>
-                We’re independently-organized by high schoolers through an intl.
+                We’re independently-organized by high schoolers, sponsored via an intl.
                 non-profit called{' '}
                 <A href="https://hackclub.com" color={theme.colors.accent}>
                   Hack Club
                 </A>
-                . The event is fully-supervised by over a dozen adults (with
+                . The event is fully supervised by over a dozen adults (with
                 background checks).
               </>
             }
@@ -297,7 +297,7 @@ export default () => (
               name="Schedule"
               lg
               color={theme.colors.slate}
-              body="Saturday 12pm–Sunday 12pm, with a lot in between. Doors open 11am next weekend, hacking starts at 12:30pm. Sleep after it :)"
+              body="Saturday 12pm–Sunday 12pm, with a lot in between. Doors open 11am next weekend, hacking starts at 12:30pm. Sleep can wait :)"
             >
               <LinkOut.span
                 to="/schedule"
