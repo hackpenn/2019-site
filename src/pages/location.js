@@ -141,6 +141,16 @@ export default () => (
             body="Sleeping during the event is optional but recommended. We’ll have a designated sleeping area at the venue: be sure to bring your sleeping bags!"
           />
         </GridItem>
+        <GridItem>
+          <Module
+            lg
+            icon="clock"
+            name="Leaving early"
+            iconColor={theme.colors.alt}
+            color={theme.colors.slate}
+            body="Attendees may leave early with parental consent (or if 18+). You can work on your project outside of the event as long as it’s submitted in-person at the deadline."
+          />
+        </GridItem>
       </ShortGrid>
     </Box.section>
     <Footer />
