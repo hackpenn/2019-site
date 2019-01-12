@@ -95,6 +95,7 @@ export default () => (
             fontSize={2}
             color="primary"
             href="https://goo.gl/maps/e1zaGxas6442"
+            target="_blank"
           >
             View on Google Maps
           </LinkOut>
