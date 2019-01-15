@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import {
   Box,
   Container,
@@ -273,8 +273,8 @@ export default () => (
             name="Who runs this? Is it supervised?"
             body={
               <>
-                We’re independently-organized by high schoolers, sponsored via an intl.
-                non-profit called{' '}
+                We’re independently-organized by high schoolers, sponsored via
+                an intl. non-profit called{' '}
                 <A href="https://hackclub.com" color={theme.colors.accent}>
                   Hack Club
                 </A>

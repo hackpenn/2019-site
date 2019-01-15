@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Box, Container, Heading, Link } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
