@@ -368,7 +368,7 @@ export default () => (
         </Text>
         <Sponsors section="sponsors" />
         <Headline color="primaryDark" fontSize={[4, 5]} mt={3} pb={[3, 4]}>
-          Additional support
+          Additional support from
         </Headline>
         <Sponsors section="additionalSupport" />
       </Container>
