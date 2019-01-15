@@ -366,7 +366,11 @@ export default () => (
             Let’s chat
           </A>
         </Text>
-        <Sponsors />
+        <Sponsors section="sponsors" />
+        <Headline color="primaryDark" fontSize={[4, 5]} mt={3} pb={[3, 4]}>
+          Additional support
+        </Headline>
+        <Sponsors section="additionalSupport" />
       </Container>
     </Box.section>
     <Leadership />

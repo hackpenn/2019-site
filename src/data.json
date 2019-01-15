@@ -106,6 +106,28 @@
       "image": "hackclub-bank.svg"
     }
   ],
+  "additionalSupport": [
+    {
+      "name": "Notion",
+      "link": "https://www.notion.so/product",
+      "image": "notion.svg"
+    },
+    {
+      "name": ".tech Domains",
+      "link": "https://get.tech/",
+      "image": "dottech.png"
+    },
+    {
+      "name": "Sketch",
+      "link": "https://sketchapp.com/",
+      "image": "sketch.svg"
+    },
+    {
+      "name": "ExpressVPN",
+      "link": "https://www.expressvpn.com/",
+      "image": "expressvpn.png"
+    }
+  ],
   "prizes": [],
   "schedule": [
     {

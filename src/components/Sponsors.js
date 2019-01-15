@@ -1,23 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, theme } from '@hackclub/design-system'
-import { sponsors } from 'data'
+import data from 'data'
 
 const Base = styled(Container)`
   display: grid;
   grid-gap: ${theme.space[2]}px;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(${props => (props.section === 'sponsors' ? '16' : '10')}rem, 1fr)
+  );
   align-items: center;
   justify-content: center;
   img {
     max-width: 75%;
-    max-height: 5rem;
+    max-height: ${props => (props.section === 'sponsors' ? '5' : '3')}rem;
   }
 `
 
 const Sponsors = props => (
   <Base {...props}>
-    {sponsors.map(sponsor => (
+    {data[props.section].map(sponsor => (
       <a href={`${sponsor.link}`}>
         <img
           alt={sponsor.name}

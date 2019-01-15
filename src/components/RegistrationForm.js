@@ -124,14 +124,14 @@ export default class RegistrationForm extends React.Component {
               if (res.status === 200) {
                 this.setState({ submitted: true })
                 jsCookie.set('signedUp', 'true')
-                
-                FS.identify(attendee.email, {
+
+                /*FS.identify(attendee.email, {
                   displayName: `${attendee.first_name} ${attendee.last_name}`,
                   email: attendee.email,
                   school: attendee.school,
                   grade: attendee.grade,
                   referrer: attendee.referrer
-                })
+                })*/
               }
             })
         }}
@@ -276,8 +276,8 @@ export default class RegistrationForm extends React.Component {
               </option>
             </FormField>
             <Explanation>
-              If you select travel reimbursement, we’ll 
-              contact you later if money is available.
+              If you select travel reimbursement, we’ll contact you later if
+              money is available.
             </Explanation>
             <Box my={3}>
               <Heading.h3>Emergency Contact Information</Heading.h3>
