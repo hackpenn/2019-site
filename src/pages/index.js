@@ -127,7 +127,7 @@ export default () => (
         <Flex align="center" my={4}>
           <Calendar month="January" day={19} />
           <Text.span align="left" fontSize={[3, 4]} ml={4} className="mono">
-            <strong>Free registration</strong>
+            <strong>Late registration</strong>
             <br />
             <A.link
               color="inherit"

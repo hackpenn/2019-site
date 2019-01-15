@@ -43,7 +43,7 @@ export default () => (
           style={{ fontFamily: theme.mono }}
           mt={3}
         >
-          Reserve your spot for Hack Pennsylvania on January 19.
+          Late registration open for Hack&nbsp;Pennsylvania.
         </Heading.h2>
         <Sheet maxWidth={36} mx={0} mt={4} align="left">
           <Container maxWidth={32} mx={0}>
@@ -52,7 +52,7 @@ export default () => (
         </Sheet>
         <Sheet
           p={[3, 4]}
-          mt={[4, 5]}
+          mt={[4, 5]
           align="center"
           maxWidth={24}
           boxShadowSize="md"
