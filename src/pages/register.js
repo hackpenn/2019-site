@@ -52,7 +52,7 @@ export default () => (
         </Sheet>
         <Sheet
           p={[3, 4]}
-          mt={[4, 5]
+          mt={[4, 5]}
           align="center"
           maxWidth={24}
           boxShadowSize="md"
