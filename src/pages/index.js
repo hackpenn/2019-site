@@ -330,6 +330,28 @@ export default () => (
               />
             </Module>
           </A.link>
+          <Photo
+            aria-label="Two hackers at the last event"
+            src="/hackhv/4.jpg"
+          />
+          <Box bg="white">
+            <Module
+              lg
+              icon="friend"
+              name="Perks for all"
+              iconColor={theme.colors.alt}
+              color={theme.colors.slate}
+              body={
+                <>
+                  Every attendee gets{' '}
+                  <A href="https://repl.it/?ref=hackpenn">repl.it</A>
+                  ’s Hacker plan. We welcome hardware, so we’re also providing
+                  Particle Photons for projects. Of&nbsp;course, we’ll also have
+                  T-shirts, stickers, prizes, & sponsor swag.
+                </>
+              }
+            />
+          </Box>
           {/*
           <Prizes bg={theme.colors.white}>
             <Module
@@ -367,7 +389,13 @@ export default () => (
           </A>
         </Text>
         <Sponsors section="sponsors" />
-        <Headline color="primaryDark" fontSize={[4, 5]} mt={3} pb={[3, 4]}>
+        <Headline
+          color={theme.colors.slate}
+          fontSize={[3, 4]}
+          caps
+          mt={[4, 5]}
+          pb={[3, 4]}
+        >
           Additional support from
         </Headline>
         <Sponsors section="additionalSupport" />

@@ -129,7 +129,10 @@ export default () => (
             body="Accessibility is core to our mission. We’re offering a few dozen attendees $30 travel reimbursements. Make sure to bring your receipts to the event."
           />
         </GridItem>
-        <Photo aria-label="Outside view of our venue" src="/ljc.jpg" />
+        <Photo
+          aria-label="Opening ceremony of last event"
+          src="/hackhv/3.jpg"
+        />
         <GridItem>
           <Module
             lg
