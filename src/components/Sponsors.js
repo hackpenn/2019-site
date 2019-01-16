@@ -8,13 +8,16 @@ const Base = styled(Container)`
   grid-gap: ${theme.space[2]}px;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(${props => (props.section === 'sponsors' ? '16' : '10')}rem, 1fr)
+    minmax(${props => (props.section === 'sponsors' ? 16 : 8)}rem, 1fr)
   );
   align-items: center;
   justify-content: center;
+  a {
+    width: 100%;
+  }
   img {
     max-width: 75%;
-    max-height: ${props => (props.section === 'sponsors' ? '5' : '3')}rem;
+    max-height: ${props => (props.section === 'sponsors' ? 5 : 3)}rem;
   }
 `
 
