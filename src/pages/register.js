@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Container, Heading, Link } from '@hackclub/design-system'
+import jsCookie from 'js-cookie'
+import { Box, Text, Container, Heading, Link } from '@hackclub/design-system'
 import { theme } from 'theme'
 import Layout from 'components/Layout'
 import Nav from 'components/Nav'
@@ -33,8 +34,13 @@ const ShareButton = ({ children, ...props }) => (
 export default () => (
   <Layout>
     <Nav />
-    <Box bg={theme.colors.primaryDark} color={theme.colors.white} pb={[4, 5]}>
-      <Container maxWidth={36} align="center" width={1} px={3}>
+    <Box
+      bg={theme.colors.primaryDark}
+      color={theme.colors.white}
+      pb={[4, 5]}
+      px={3}
+    >
+      <Container maxWidth={28} align="center" width={1}>
         <Headline mt={0} fontSize={[6, 7]}>
           Get your free&nbsp;ticket
         </Headline>
@@ -43,35 +49,45 @@ export default () => (
           style={{ fontFamily: theme.mono }}
           mt={3}
         >
-          Late registration open for Hack&nbsp;Pennsylvania.
+          <Box color={theme.colors.alt}>Late registration open.</Box>
+          <Text.span color={theme.colors.smoke} fontSize={[2, 3, 4]}>
+            (T-shirt not guaranteed.)
+          </Text.span>
         </Heading.h2>
-        <Sheet maxWidth={36} mx={0} mt={4} align="left">
-          <Container maxWidth={32} mx={0}>
-            <RegistrationForm />
-          </Container>
-        </Sheet>
-        <Sheet
-          p={[3, 4]}
-          mt={[4, 5]}
-          align="center"
-          maxWidth={24}
-          boxShadowSize="md"
-        >
-          <Heading.h2 f={3} caps mb={2}>
-            Share it!
-          </Heading.h2>
-          <ShareButton
-            service="Twitter"
-            url={twitterURL(
-              'Check out @hackpenn, PA’s largest high school hackathon!',
-              url
-            )}
-            bg="#1da1f2"
-            mr={3}
-          />
-          <ShareButton service="Facebook" url={facebookURL(url)} bg="#3b5998" />
-        </Sheet>
       </Container>
+      <Sheet maxWidth={36} mt={4} align="left">
+        <Container maxWidth={32} mx={0}>
+          <RegistrationForm />
+        </Container>
+      </Sheet>
+      {jsCookie.get('signedUp') ||
+        (false && (
+          <Sheet
+            p={[3, 4]}
+            mt={[4, 5]}
+            align="center"
+            maxWidth={24}
+            boxShadowSize="md"
+          >
+            <Heading.h2 f={3} caps mb={2}>
+              Share it!
+            </Heading.h2>
+            <ShareButton
+              service="Twitter"
+              url={twitterURL(
+                'Check out @hackpenn, PA’s largest high school hackathon!',
+                url
+              )}
+              bg="#1da1f2"
+              mr={3}
+            />
+            <ShareButton
+              service="Facebook"
+              url={facebookURL(url)}
+              bg="#3b5998"
+            />
+          </Sheet>
+        ))}
     </Box>
     <Footer />
   </Layout>
