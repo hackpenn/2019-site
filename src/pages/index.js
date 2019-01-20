@@ -13,8 +13,6 @@ import {
 } from '@hackclub/design-system'
 import { theme } from 'theme'
 import { Link } from 'gatsby'
-import Action from 'components/Action'
-import Apply from 'components/Apply'
 import Bannerline from 'components/Bannerline'
 import Calendar from 'components/Calendar'
 import Footer from 'components/Footer'
@@ -127,7 +125,7 @@ export default () => (
         <Flex align="center" my={4}>
           <Calendar month="January" day={19} />
           <Text.span align="left" fontSize={[3, 4]} ml={4} className="mono">
-            <strong>Late registration</strong>
+            <strong>Noon to noon</strong>
             <br />
             <A.link
               color="inherit"
@@ -139,16 +137,6 @@ export default () => (
               State&nbsp;College, PA
             </A.link>
           </Text.span>
-        </Flex>
-        <Flex align="center" wrap>
-          <Action
-            to="/register"
-            children="Reserve your spot"
-            fontSize={[3, 4]}
-            bg={theme.colors.primary}
-            chevronRight
-            scale
-          />
         </Flex>
       </Container>
     </Box.header>
@@ -371,7 +359,6 @@ export default () => (
         </Grid>
       </Container>
     </Box.section>
-    <Apply />
     <Box.section bg={theme.colors.white}>
       <Container width={1} px={3} pt={3} pb={[4, 5, 6]}>
         <Bannerline />
