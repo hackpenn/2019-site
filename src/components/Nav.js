@@ -53,7 +53,7 @@ const Nav = ({ color = 'white', ...props }) => (
         <Item to="/location" children="Location" />
         <Item to="/schedule" children="Schedule" />
         <Item to="/submit" children="Submit Your Project!" />
-        <Item to="/jschedule" children="Judging Schedule"
+        <Item to="/jschedule" children="Judging Schedule" />
       </Bar>
     </Inner>
   </Base>
