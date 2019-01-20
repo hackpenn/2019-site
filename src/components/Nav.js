@@ -52,6 +52,7 @@ const Nav = ({ color = 'white', ...props }) => (
       <Bar role="navigation" ml={3} align="left">
         <Item to="/location" children="Location" />
         <Item to="/schedule" children="Schedule" />
+        <Item to="/submit" children="Submit Your Project!" />
       </Bar>
     </Inner>
   </Base>
