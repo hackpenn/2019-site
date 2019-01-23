@@ -152,11 +152,11 @@ export default () => (
           <Bannerline />
           <Headline color="primaryDark">Welcome to the “hackathon.”</Headline>
           <Lead my={3} maxWidth={48}>
-            Hack Pennsylvania is a 24-hour event where 150 programmers, artists,
-            designers, & other high schoolers from across the Northeast will
-            come to together to build apps & games. We’ll provide workshops,
+            Hack Pennsylvania was a 24-hour event where 150 programmers,
+            artists, designers, & other high schoolers from across the Northeast
+            came together to build apps & games. We provided workshops,
             mentorship, free meals & drinks, & places to sleep. The next
-            morning, judges will pick the best projects to demo and win prizes.
+            morning, judges picked the best projects to demo and win prizes.
           </Lead>
         </Container>
         <Modules>
