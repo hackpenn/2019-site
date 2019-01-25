@@ -1,3 +1,3 @@
-# Hack Pennsylvania
+# Hack Pennsylvania 2019
 
-[**hackpenn.com**](https://hackpenn.com)
+[**2019.hackpenn.com**](https://2019.hackpenn.com)
