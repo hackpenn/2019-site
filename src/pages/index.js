@@ -154,7 +154,7 @@ export default () => (
           <Lead my={3} maxWidth={48}>
             Hack Pennsylvania is a 24-hour event where 150 programmers, artists,
             designers, & other high schoolers from across the Northeast will
-            come to together to build apps & games. We’ll provide workshops,
+            come together to build apps & games. We’ll provide workshops,
             mentorship, free meals & drinks, & places to sleep. The next
             morning, judges will pick the best projects to demo and win prizes.
           </Lead>
